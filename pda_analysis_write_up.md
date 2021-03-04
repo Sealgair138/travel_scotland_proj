@@ -1,5 +1,7 @@
-2.1 Analysis plan questions
-   
+**2.1 Analysis plan questions**
+
+Please describe your plan for your analysis. Include details such as:
+ 
 * Where you plan to get your data from?
    
 * Summarise the requirements of the project.
@@ -20,11 +22,30 @@
 		 
 		 Demographics such as age, familys with children, employment, marital 		status.
 		 
-	In order to ensure that my analysis can be replicated and shared. I will be uploading the project in its entirety to a git hub repository. I will also be saving the cleaning/analysis/visualisation aspects of the project on seperate .csv files.
+		In order to ensure that my analysis can be replicated and shared. I 		will be uploading the project in its entirety to a git hub repository. 		I will also be saving the cleaning/analysis/visualisation aspects of 		the project on seperate .csv files. The code for cleaning and analysis 		will also be on Rmd files.
+	
+**What potential data quality issues might this data have?**
 		 
+		 Potential data qaulity issues include, missing dates rendering entire 		rows useless. Numbers incorectly formatted. Missing data entirely such 		as NA's. There could be too much data requiring me to spend too much 		time filtering and cleaning data only to discover its not usefull. 
 		 
+**What issues with bias might this data have?**
+
+	Possible date bias issues could include expenditure being skewed by the local population of urban areas. 
 		 
-		 
+**Describe the structure of the data you have.**
+
+How are your data sets related to each other?
+
+	The data sets are all sourced from the scot gov statistics site.
+	The data sets also all share a feature code. All the data references Scottish 
+	tourism wether it be financial or footfall for an area.
+	
+
+How will you combine them to carry out your analysis.
+
+	All the data sets have a feature code column, this will allow me to merge appropriate data together. They also all have a date range, with the feature code and dates i will be able to align data appropriately.
+    
+
 		 
 		 
 
