@@ -3,8 +3,70 @@ title: "Q&A"
 output: html_notebook
 ---
 
-What kind of tourism activity generates the highest income for scotland
 ```{r}
-day_visits_activities
+library(tidyverse)
+library(ggplot2)
+```
+
+What kind of tourism activity generates the highest income for Scotland?
+```{r} 
+
+#remove the All variable
+ggplot(day_visits_activities) +
+  aes(x = reorder(tourism_activity, million_pounds_gbp), y = million_pounds_gbp) +
+  geom_col() +
+  coord_flip()
+  
+```
+
+Which kind of activity generates the most visits to sites
+```{r}
+# remove all variable
+ggplot(day_visits_activities) +
+  aes(x = reorder(tourism_activity, million_visits), y = million_visits) +
+  geom_col()+
+  coord_flip()
+
+```
+
+Is there a particular key demographic of visitors we should be focusing on? Who spends the most?
+Who visits the most?
+
+```{r} 
+# some kind of fact, maybe a bubble plot
+ggplot(day_visits_demographics) +
+  aes(x = age, y = million_pounds_gbp) +
+  geom_point()
+```
+
+What type of locations receive the most visits? What kinds of locations do people spend the most in?
+```{r}
+
+```
+
+Is there a particular method of travel our visitors arrive by? Some of our locations are remote and not easily accessible by public transport, so this would be good information to have.
+```{r}
+
+```
+
+When looking at regional tourism, what insights can we gain? Where are our visitors from? How do they differ in the money they spend, nights they spend in Scotland, or number of visits they do?
+```{r}
+
+```
+
+What type of accomodation is most popular? Is there a difference by location?
+```{r}
+
+```
+
+How have general tourism rates changed over time?
+```{r}
+
+```
+
+Is there any way to predict spending and visits for Visit Scotland?
+
+```{r}
+
 ```
 

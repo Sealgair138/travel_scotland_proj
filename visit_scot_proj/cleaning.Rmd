@@ -61,6 +61,8 @@ day_visits_activities <- day_visits_activities %>%
 day_visits_activities <- day_visits_activities %>% #seperate visits and expendature into seperate columns
   pivot_wider(names_from = units,
               values_from = value)
+
+day_visits_activities <- day_visits_activities %>% clean_names()
 ```
 
 #day_visits_demo cleaning
