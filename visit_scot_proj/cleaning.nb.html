@@ -219,53 +219,14 @@ pre code {
 <h1>Librarys</h1>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeSh0aWR5dmVyc2UpXG5gYGAifQ== -->
-<pre class="r"><code>library(tidyverse)</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeSh0aWR5dmVyc2UpXG5saWJyYXJ5KHRpZHlyKVxubGlicmFyeShqYW5pdG9yKVxubGlicmFyeShkcGx5cilcbmxpYnJhcnkoaGVyZSlcbmxpYnJhcnkobHVicmlkYXRlKVxuYGBgIn0= -->
+<pre class="r"><code>library(tidyverse)
+library(tidyr)
+library(janitor)
+library(dplyr)
+library(here)
+library(lubridate)</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiUmVnaXN0ZXJlZCBTMyBtZXRob2RzIG92ZXJ3cml0dGVuIGJ5ICdkYnBseXInOlxuICBtZXRob2QgICAgICAgICBmcm9tXG4gIHByaW50LnRibF9sYXp5ICAgICBcbiAgcHJpbnQudGJsX3NxbCAgICAgIFxu4pSA4pSAIEF0dGFjaGluZyBwYWNrYWdlcyDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIAgdGlkeXZlcnNlIDEuMy4wIOKUgOKUgFxu4pyTIGdncGxvdDIgMy4zLjMgICAgIOKckyBwdXJyciAgIDAuMy40XG7inJMgdGliYmxlICAzLjAuNiAgICAg4pyTIGRwbHlyICAgMS4wLjRcbuKckyB0aWR5ciAgIDEuMS4yICAgICDinJMgc3RyaW5nciAxLjQuMFxu4pyTIHJlYWRyICAgMS40LjAgICAgIOKckyBmb3JjYXRzIDAuNS4xXG5wYWNrYWdlIOKAmGdncGxvdDLigJkgd2FzIGJ1aWx0IHVuZGVyIFIgdmVyc2lvbiAzLjYuMnBhY2thZ2Ug4oCYdGliYmxl4oCZIHdhcyBidWlsdCB1bmRlciBSIHZlcnNpb24gMy42LjJwYWNrYWdlIOKAmHRpZHly4oCZIHdhcyBidWlsdCB1bmRlciBSIHZlcnNpb24gMy42LjJwYWNrYWdlIOKAmHJlYWRy4oCZIHdhcyBidWlsdCB1bmRlciBSIHZlcnNpb24gMy42LjJwYWNrYWdlIOKAmHB1cnJy4oCZIHdhcyBidWlsdCB1bmRlciBSIHZlcnNpb24gMy42LjJwYWNrYWdlIOKAmGRwbHly4oCZIHdhcyBidWlsdCB1bmRlciBSIHZlcnNpb24gMy42LjLilIDilIAgQ29uZmxpY3RzIOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgCB0aWR5dmVyc2VfY29uZmxpY3RzKCkg4pSA4pSAXG54IGRwbHlyOjpmaWx0ZXIoKSBtYXNrcyBzdGF0czo6ZmlsdGVyKClcbnggZHBseXI6OmxhZygpICAgIG1hc2tzIHN0YXRzOjpsYWcoKVxuIn0= -->
-<pre><code>Registered S3 methods overwritten by &#39;dbplyr&#39;:
-  method         from
-  print.tbl_lazy     
-  print.tbl_sql      
-── Attaching packages ────────────────────────────────────────────────────────────────── tidyverse 1.3.0 ──
-✓ ggplot2 3.3.3     ✓ purrr   0.3.4
-✓ tibble  3.0.6     ✓ dplyr   1.0.4
-✓ tidyr   1.1.2     ✓ stringr 1.4.0
-✓ readr   1.4.0     ✓ forcats 0.5.1
-package ‘ggplot2’ was built under R version 3.6.2package ‘tibble’ was built under R version 3.6.2package ‘tidyr’ was built under R version 3.6.2package ‘readr’ was built under R version 3.6.2package ‘purrr’ was built under R version 3.6.2package ‘dplyr’ was built under R version 3.6.2── Conflicts ───────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
-x dplyr::filter() masks stats::filter()
-x dplyr::lag()    masks stats::lag()</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeSh0aWR5cilcbmxpYnJhcnkoamFuaXRvcilcbmBgYCJ9 -->
-<pre class="r"><code>library(tidyr)
-library(janitor)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoicGFja2FnZSDigJhqYW5pdG9y4oCZIHdhcyBidWlsdCB1bmRlciBSIHZlcnNpb24gMy42LjJcbkF0dGFjaGluZyBwYWNrYWdlOiDigJhqYW5pdG9y4oCZXG5cblRoZSBmb2xsb3dpbmcgb2JqZWN0cyBhcmUgbWFza2VkIGZyb20g4oCYcGFja2FnZTpzdGF0c+KAmTpcblxuICAgIGNoaXNxLnRlc3QsIGZpc2hlci50ZXN0XG4ifQ== -->
-<pre><code>package ‘janitor’ was built under R version 3.6.2
-Attaching package: ‘janitor’
-
-The following objects are masked from ‘package:stats’:
-
-    chisq.test, fisher.test</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShkcGx5cilcbmxpYnJhcnkoaGVyZSlcbmBgYCJ9 -->
-<pre class="r"><code>library(dplyr)
-library(here)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiaGVyZSgpIHN0YXJ0cyBhdCAvVXNlcnMvamFtZXMvdmlzaXRfc2NvdGxhbmRfcHJvai92aXNpdF9zY290X3Byb2pcbiJ9 -->
-<pre><code>here() starts at /Users/james/visit_scotland_proj/visit_scot_proj</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShsdWJyaWRhdGUpXG5gYGAifQ== -->
-<pre class="r"><code>library(lubridate)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoicGFja2FnZSDigJhsdWJyaWRhdGXigJkgd2FzIGJ1aWx0IHVuZGVyIFIgdmVyc2lvbiAzLjYuMlxuQXR0YWNoaW5nIHBhY2thZ2U6IOKAmGx1YnJpZGF0ZeKAmVxuXG5UaGUgZm9sbG93aW5nIG9iamVjdHMgYXJlIG1hc2tlZCBmcm9tIOKAmHBhY2thZ2U6YmFzZeKAmTpcblxuICAgIGRhdGUsIGludGVyc2VjdCwgc2V0ZGlmZiwgdW5pb25cbiJ9 -->
-<pre><code>package ‘lubridate’ was built under R version 3.6.2
-Attaching package: ‘lubridate’
-
-The following objects are masked from ‘package:base’:
-
-    date, intersect, setdiff, union</code></pre>
-<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 </div>
@@ -273,110 +234,14 @@ The following objects are masked from ‘package:base’:
 <h1>Read in the data and run clean names</h1>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucmVnaW9uYWxfZG9tZXN0aWNfdG91cmlzbSA8LSByZWFkX2NzdihcImRhdGEvcmVnaW9uYWxfZG9tZXN0aWNfdG91cmlzbS5jc3ZcIikgJT4lICBjbGVhbl9uYW1lcygpXG5gYGAifQ== -->
-<pre class="r"><code>regional_domestic_tourism &lt;- read_csv(&quot;data/regional_domestic_tourism.csv&quot;) %&gt;%  clean_names()</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucmVnaW9uYWxfZG9tZXN0aWNfdG91cmlzbSA8LSByZWFkX2NzdihcImRhdGEvcmVnaW9uYWxfZG9tZXN0aWNfdG91cmlzbS5jc3ZcIikgJT4lICBjbGVhbl9uYW1lcygpXG5zY290X2FjY29tb2RhdGlvbl9vY2N1cGFuY3kgPC0gcmVhZF9jc3YoXCJkYXRhL3Njb3R0aXNoX2FjY29tb2RhdGlvbl9vY2N1cGFuY3kuY3N2XCIpICU+JSAgY2xlYW5fbmFtZXMoKVxuZGF5X3Zpc2l0c19hY3Rpdml0aWVzIDwtIHJlYWRfY3N2KFwiZGF0YS90b3VyaXNtX2RheV92aXNpdHNfYWN0aXZpdGllcy5jc3ZcIikgJT4lICBjbGVhbl9uYW1lcygpXG5kYXlfdmlzaXRzX2RlbW9ncmFwaGljcyA8LSByZWFkX2NzdihcImRhdGEvdG91cmlzbV9kYXlfdmlzaXRzX2RlbW9ncmFwaGljcy5jc3ZcIikgJT4lICBjbGVhbl9uYW1lcygpXG5kYXlfdmlzaXRzX2xvY2F0aW9uIDwtIHJlYWRfY3N2KFwiZGF0YS90b3VyaXNtX2RheV92aXNpdHNfbG9jYXRpb24uY3N2XCIpICU+JSAgY2xlYW5fbmFtZXMoKVxuZGF5X3Zpc2l0c190cmFuc3BvcnQgPC0gcmVhZF9jc3YoXCJkYXRhL3RvdXJpc21fZGF5X3Zpc2l0c190cmFuc3BvcnQuY3N2XCIpICU+JSAgY2xlYW5fbmFtZXMoKVxuYGBgIn0= -->
+<pre class="r"><code>regional_domestic_tourism &lt;- read_csv(&quot;data/regional_domestic_tourism.csv&quot;) %&gt;%  clean_names()
+scot_accomodation_occupancy &lt;- read_csv(&quot;data/scottish_accomodation_occupancy.csv&quot;) %&gt;%  clean_names()
+day_visits_activities &lt;- read_csv(&quot;data/tourism_day_visits_activities.csv&quot;) %&gt;%  clean_names()
+day_visits_demographics &lt;- read_csv(&quot;data/tourism_day_visits_demographics.csv&quot;) %&gt;%  clean_names()
+day_visits_location &lt;- read_csv(&quot;data/tourism_day_visits_location.csv&quot;) %&gt;%  clean_names()
+day_visits_transport &lt;- read_csv(&quot;data/tourism_day_visits_transport.csv&quot;) %&gt;%  clean_names()</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG7ilIDilIAgQ29sdW1uIHNwZWNpZmljYXRpb24g4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSAXG5jb2xzKFxuICBGZWF0dXJlQ29kZSA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgRGF0ZUNvZGUgPSBjb2xfY2hhcmFjdGVyKCksXG4gIE1lYXN1cmVtZW50ID0gY29sX2NoYXJhY3RlcigpLFxuICBVbml0cyA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgVmFsdWUgPSBjb2xfZG91YmxlKCksXG4gIGBSZWdpb24gb2YgUmVzaWRlbmNlYCA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgYEJyZWFrZG93biBvZiBEb21lc3RpYyBUb3VyaXNtYCA9IGNvbF9jaGFyYWN0ZXIoKVxuKVxuIn0= -->
-<pre><code>
-── Column specification ───────────────────────────────────────────────────────────────────────────────────
-cols(
-  FeatureCode = col_character(),
-  DateCode = col_character(),
-  Measurement = col_character(),
-  Units = col_character(),
-  Value = col_double(),
-  `Region of Residence` = col_character(),
-  `Breakdown of Domestic Tourism` = col_character()
-)</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc2NvdF9hY2NvbW9kYXRpb25fb2NjdXBhbmN5IDwtIHJlYWRfY3N2KFwiZGF0YS9zY290dGlzaF9hY2NvbW9kYXRpb25fb2NjdXBhbmN5LmNzdlwiKSAlPiUgIGNsZWFuX25hbWVzKClcbmBgYCJ9 -->
-<pre class="r"><code>scot_accomodation_occupancy &lt;- read_csv(&quot;data/scottish_accomodation_occupancy.csv&quot;) %&gt;%  clean_names()</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG7ilIDilIAgQ29sdW1uIHNwZWNpZmljYXRpb24g4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSAXG5jb2xzKFxuICBGZWF0dXJlQ29kZSA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgRGF0ZUNvZGUgPSBjb2xfZG91YmxlKCksXG4gIE1lYXN1cmVtZW50ID0gY29sX2NoYXJhY3RlcigpLFxuICBVbml0cyA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgVmFsdWUgPSBjb2xfZG91YmxlKCksXG4gIGBBY2NvbW1vZGF0aW9uIFR5cGUgYW5kIE9jY3VwYW5jeWAgPSBjb2xfY2hhcmFjdGVyKCksXG4gIGBXZWVrZGF5L1dlZWtlbmRgID0gY29sX2NoYXJhY3RlcigpLFxuICBgU2l6ZSBvZiBBY2NvbW1vZGF0aW9uYCA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgTG9jYXRpb24gPSBjb2xfY2hhcmFjdGVyKClcbilcbiJ9 -->
-<pre><code>
-── Column specification ───────────────────────────────────────────────────────────────────────────────────
-cols(
-  FeatureCode = col_character(),
-  DateCode = col_double(),
-  Measurement = col_character(),
-  Units = col_character(),
-  Value = col_double(),
-  `Accommodation Type and Occupancy` = col_character(),
-  `Weekday/Weekend` = col_character(),
-  `Size of Accommodation` = col_character(),
-  Location = col_character()
-)</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZGF5X3Zpc2l0c19hY3Rpdml0aWVzIDwtIHJlYWRfY3N2KFwiZGF0YS90b3VyaXNtX2RheV92aXNpdHNfYWN0aXZpdGllcy5jc3ZcIikgJT4lICBjbGVhbl9uYW1lcygpXG5gYGAifQ== -->
-<pre class="r"><code>day_visits_activities &lt;- read_csv(&quot;data/tourism_day_visits_activities.csv&quot;) %&gt;%  clean_names()</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG7ilIDilIAgQ29sdW1uIHNwZWNpZmljYXRpb24g4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSAXG5jb2xzKFxuICBGZWF0dXJlQ29kZSA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgRGF0ZUNvZGUgPSBjb2xfZG91YmxlKCksXG4gIE1lYXN1cmVtZW50ID0gY29sX2NoYXJhY3RlcigpLFxuICBVbml0cyA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgVmFsdWUgPSBjb2xfZG91YmxlKCksXG4gIGBUb3VyaXNtIEFjdGl2aXR5YCA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgYEJyZWFrZG93biBvZiBEb21lc3RpYyBUb3VyaXNtYCA9IGNvbF9jaGFyYWN0ZXIoKVxuKVxuIn0= -->
-<pre><code>
-── Column specification ───────────────────────────────────────────────────────────────────────────────────
-cols(
-  FeatureCode = col_character(),
-  DateCode = col_double(),
-  Measurement = col_character(),
-  Units = col_character(),
-  Value = col_double(),
-  `Tourism Activity` = col_character(),
-  `Breakdown of Domestic Tourism` = col_character()
-)</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZGF5X3Zpc2l0c19kZW1vZ3JhcGhpY3MgPC0gcmVhZF9jc3YoXCJkYXRhL3RvdXJpc21fZGF5X3Zpc2l0c19kZW1vZ3JhcGhpY3MuY3N2XCIpICU+JSAgY2xlYW5fbmFtZXMoKVxuYGBgIn0= -->
-<pre class="r"><code>day_visits_demographics &lt;- read_csv(&quot;data/tourism_day_visits_demographics.csv&quot;) %&gt;%  clean_names()</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG7ilIDilIAgQ29sdW1uIHNwZWNpZmljYXRpb24g4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSAXG5jb2xzKFxuICBGZWF0dXJlQ29kZSA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgRGF0ZUNvZGUgPSBjb2xfZG91YmxlKCksXG4gIE1lYXN1cmVtZW50ID0gY29sX2NoYXJhY3RlcigpLFxuICBVbml0cyA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgVmFsdWUgPSBjb2xfZG91YmxlKCksXG4gIGBCcmVha2Rvd24gb2YgRG9tZXN0aWMgVG91cmlzbWAgPSBjb2xfY2hhcmFjdGVyKCksXG4gIEFnZSA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgYE1hcml0YWwgU3RhdHVzYCA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgR2VuZGVyID0gY29sX2NoYXJhY3RlcigpLFxuICBgRW1wbG95bWVudCBTdGF0dXNgID0gY29sX2NoYXJhY3RlcigpLFxuICBDaGlsZHJlbiA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgYEFjY2VzcyB0byBDYXJgID0gY29sX2NoYXJhY3RlcigpLFxuICBgU29jaWFsIEdyYWRlYCA9IGNvbF9jaGFyYWN0ZXIoKVxuKVxuIn0= -->
-<pre><code>
-── Column specification ───────────────────────────────────────────────────────────────────────────────────
-cols(
-  FeatureCode = col_character(),
-  DateCode = col_double(),
-  Measurement = col_character(),
-  Units = col_character(),
-  Value = col_double(),
-  `Breakdown of Domestic Tourism` = col_character(),
-  Age = col_character(),
-  `Marital Status` = col_character(),
-  Gender = col_character(),
-  `Employment Status` = col_character(),
-  Children = col_character(),
-  `Access to Car` = col_character(),
-  `Social Grade` = col_character()
-)</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZGF5X3Zpc2l0c19sb2NhdGlvbiA8LSByZWFkX2NzdihcImRhdGEvdG91cmlzbV9kYXlfdmlzaXRzX2xvY2F0aW9uLmNzdlwiKSAlPiUgIGNsZWFuX25hbWVzKClcbmBgYCJ9 -->
-<pre class="r"><code>day_visits_location &lt;- read_csv(&quot;data/tourism_day_visits_location.csv&quot;) %&gt;%  clean_names()</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG7ilIDilIAgQ29sdW1uIHNwZWNpZmljYXRpb24g4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSAXG5jb2xzKFxuICBGZWF0dXJlQ29kZSA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgRGF0ZUNvZGUgPSBjb2xfZG91YmxlKCksXG4gIE1lYXN1cmVtZW50ID0gY29sX2NoYXJhY3RlcigpLFxuICBVbml0cyA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgVmFsdWUgPSBjb2xfZG91YmxlKCksXG4gIGBUeXBlIG9mIExvY2F0aW9uIFZpc2l0ZWRgID0gY29sX2NoYXJhY3RlcigpLFxuICBgQnJlYWtkb3duIG9mIERvbWVzdGljIFRvdXJpc21gID0gY29sX2NoYXJhY3RlcigpXG4pXG4ifQ== -->
-<pre><code>
-── Column specification ───────────────────────────────────────────────────────────────────────────────────
-cols(
-  FeatureCode = col_character(),
-  DateCode = col_double(),
-  Measurement = col_character(),
-  Units = col_character(),
-  Value = col_double(),
-  `Type of Location Visited` = col_character(),
-  `Breakdown of Domestic Tourism` = col_character()
-)</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZGF5X3Zpc2l0c190cmFuc3BvcnQgPC0gcmVhZF9jc3YoXCJkYXRhL3RvdXJpc21fZGF5X3Zpc2l0c190cmFuc3BvcnQuY3N2XCIpICU+JSAgY2xlYW5fbmFtZXMoKVxuYGBgIn0= -->
-<pre class="r"><code>day_visits_transport &lt;- read_csv(&quot;data/tourism_day_visits_transport.csv&quot;) %&gt;%  clean_names()</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG7ilIDilIAgQ29sdW1uIHNwZWNpZmljYXRpb24g4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSAXG5jb2xzKFxuICBGZWF0dXJlQ29kZSA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgRGF0ZUNvZGUgPSBjb2xfZG91YmxlKCksXG4gIE1lYXN1cmVtZW50ID0gY29sX2NoYXJhY3RlcigpLFxuICBVbml0cyA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgVmFsdWUgPSBjb2xfZG91YmxlKCksXG4gIGBNZXRob2Qgb2YgVHJhdmVsYCA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgYEJyZWFrZG93biBvZiBEb21lc3RpYyBUb3VyaXNtYCA9IGNvbF9jaGFyYWN0ZXIoKVxuKVxuIn0= -->
-<pre><code>
-── Column specification ───────────────────────────────────────────────────────────────────────────────────
-cols(
-  FeatureCode = col_character(),
-  DateCode = col_double(),
-  Measurement = col_character(),
-  Units = col_character(),
-  Value = col_double(),
-  `Method of Travel` = col_character(),
-  `Breakdown of Domestic Tourism` = col_character()
-)</code></pre>
-<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p>Explore the data</p>
@@ -386,13 +251,6 @@ cols(
 <pre class="r"><code>regional_domestic_tourism %&gt;%
   head()</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbInRibF9kZiIsInRibCIsImRhdGEuZnJhbWUiXSwibnJvdyI6NiwibmNvbCI6Nywic3VtbWFyeSI6eyJBIHRpYmJsZSI6WyI2IHggNyJdfX0sInJkZiI6Ikg0c0lBQUFBQUFBQUE3VlR6VS9iTUJRM0xVbG8rSlRnT2lsSGRtalZVbTNRRzJOam5FQnNCY1N0TXJIYldqaDJaVHVESTM4M2gzYlBxYjJTckFKcEU1YWM5OTd2OXo1dDUrZTMyMjU4R3lPRTZxZ2V3amNBRlFYWFY5K2JSd2l0MXNCWVFhdW9ZZVVqMEx1Z1JMQjNZSWVPYVBRN0IyMVkzZDc3QUpWcUIrM081eVo4amw0QW55eHcrQnB3YUlIZUFtajNMTkQ1TzJtNVd2QlY1c0w4djFIT3VwY3h6cGtVeVFSSW9wUDlzNVBMajQ3YnZockxYR05Ca2dzMkdodjk3eUVMK0lacHRnUjIzZ2h0MmQ2T0UxU3NZL3cwbDk3dU8vbkR5Zk01WDVrcE9oVWpEbG45aVg3aFBKSEQ1T3hrT1Y4eDEvcXBORXZ0Y3BYMTA4Y0pGWVNaWEZFSGhhV2gzM1FJUzRmaHVmSlREd1RPcUhhbEl3ZHVEQ20yV1FlcEpENTFnMkJUQXRZemlqVTRaWFR4QW5LeHFCZjh3anozenJ1S2p1QktCM0k0VUZRelFrWHFxUTkzaXVKN0loOEtsa2hveDdCMFlHU3VtTTRxN1RhVWZHajVsamRoMSt3TnpXYXo1K3BjS2NmYXorWEJHR2JBcmFHQ2VMQ21sWkJJVGd6MENFRTErKzhIbGVBVlZRRzJjMkU3SWMxMG5JdjdadGNXS09qNTJuUjYrRUtQNWlWck01Y3E4SGREeFlnSmZ5SUJ4M2VVTzJNTEppNEdiazBVKzNQU01hQzZaYVRCM2k5T0pmZElNUnVhL2daeTRBMjM4Z1FBQUE9PSJ9 -->
-<div data-pagedtable="false">
-<script data-pagedtable-source type="application/json">
-{"columns":[{"label":["feature_code"],"name":[1],"type":["chr"],"align":["left"]},{"label":["date_code"],"name":[2],"type":["chr"],"align":["left"]},{"label":["measurement"],"name":[3],"type":["chr"],"align":["left"]},{"label":["units"],"name":[4],"type":["chr"],"align":["left"]},{"label":["value"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["region_of_residence"],"name":[6],"type":["chr"],"align":["left"]},{"label":["breakdown_of_domestic_tourism"],"name":[7],"type":["chr"],"align":["left"]}],"data":[{"1":"S12000039","2":"2016-2018","3":"Count","4":"million pounds (GBP)","5":"8","6":"England","7":"Expenditure"},{"1":"S12000039","2":"2015-2017","3":"Count","4":"Thousand Nights","5":"140","6":"All of GB","7":"Nights"},{"1":"S12000039","2":"2015-2017","3":"Count","4":"million pounds (GBP)","5":"8","6":"England","7":"Expenditure"},{"1":"S12000039","2":"2017-2019","3":"Count","4":"Thousand Nights","5":"76","6":"England","7":"Nights"},{"1":"S12000039","2":"2009-2011","3":"Count","4":"Thousand Visits","5":"68","6":"Scotland","7":"Visits"},{"1":"S12000039","2":"2016-2018","3":"Count","4":"Thousand Nights","5":"59","6":"Scotland","7":"Nights"}],"options":{"columns":{"min":{},"max":[10],"total":[7]},"rows":{"min":[10],"max":[10],"total":[6]},"pages":{}}}
-  </script>
-</div>
-<!-- rnb-frame-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
@@ -401,13 +259,6 @@ cols(
 <pre class="r"><code>scot_accomodation_occupancy %&gt;% 
   head()</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbInRibF9kZiIsInRibCIsImRhdGEuZnJhbWUiXSwibnJvdyI6NiwibmNvbCI6OSwic3VtbWFyeSI6eyJBIHRpYmJsZSI6WyI2IHggOSJdfX0sInJkZiI6Ikg0c0lBQUFBQUFBQUE5MVV2VzhUTVJSM2sxN0tIZlFESVpnOUlSZ1NFR1dnUTZWTFZhQ3FrSXJTVnVxQWRISjhUampWWjU5OHZvWlVIUmdaa0JnUkxCMVkrU3VZR0dEbUwwRklEQTNQaVYxeUo2RktpQ3c4eWZmZSt6Mi9UOXZYMlR4WURRNENoRkFkMVJ2dzlVQkUzdjdlbytZRGhPWnJvTXloZWVRYi9nTE0xMEF3eWdxc2hqWDR1MnYzN2hwYW5RMkEwSkxKRnA1bXBqWVVucDVZL3NweVhkRmZJMHZUVlM0OFpZb3lvZitsV3M0UVdKajAyUXdSTjQzdFc5OC92WGwyTzl4Nkc2eG5INzZGTzU4bit2YkhMMEJmdzgyMWQwRHZ3NGMveHZaS3JmaHh3WEtOdDJTUnN6c2JOemR3RTNla1RQRU9wVVZHQkIzK04vdktmZGZiblArdE9LdElOOXFVc2p4UHVwemgzWlJ3anZma1FPVFdldlVKVVgyRzkxV1hDTnhXakZ4b1dKbUsxeWtVNFJmZ2Y4cGZmdjZlSUNuTGJlbStCYS8wR05HRlloR1ZzYnVzZmt4MENiaWNRbTJ3S2YzOWdyeENKTnJWNngwUlhyak5tRkFxMDFSQ2tFU0tTQTh6RmhFUlI3Snk4TXNEeGc1ak1vd01aeUsyOFBVOE9XYVI3RVdsTU5aNGlVczYwY3V0K1VvT1dxNjlSVmkxbC9BWmpVWS9xek9nbk9SdUJnNE1JQWRwOVJUNGczWldjVm1RbWNrSVRqWHo3L1Fxem5PcUFpd1h3bFFTTituelFodzI3NXNFWS9PRUZxM2NtSkw5U2NyYXlJYnliS2dHRS8xRXVNRjZuSFNaTy9JbDZIamNjQ3RUeWZtcEJJRG1MUzMxK2RVSXFPUU9HZmVHem40QjljdkU4aklHQUFBPSJ9 -->
-<div data-pagedtable="false">
-<script data-pagedtable-source type="application/json">
-{"columns":[{"label":["feature_code"],"name":[1],"type":["chr"],"align":["left"]},{"label":["date_code"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["measurement"],"name":[3],"type":["chr"],"align":["left"]},{"label":["units"],"name":[4],"type":["chr"],"align":["left"]},{"label":["value"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["accommodation_type_and_occupancy"],"name":[6],"type":["chr"],"align":["left"]},{"label":["weekday_weekend"],"name":[7],"type":["chr"],"align":["left"]},{"label":["size_of_accommodation"],"name":[8],"type":["chr"],"align":["left"]},{"label":["location"],"name":[9],"type":["chr"],"align":["left"]}],"data":[{"1":"S92000003","2":"2012","3":"Percent","4":"Percentage","5":"52.32","6":"Guest House/B&B - Room Occupancy","7":"All","8":"All","9":"Accessible Small Towns"},{"1":"S92000003","2":"2015","3":"Percent","4":"Percentage","5":"49.18","6":"Guest House/B&B - Room Occupancy","7":"All","8":"All","9":"Large Urban Areas"},{"1":"S92000003","2":"2018","3":"Percent","4":"Percentage","5":"63.57","6":"Guest House/B&B - Room Occupancy","7":"All","8":"All","9":"Large Urban Areas"},{"1":"S92000003","2":"2013","3":"Percent","4":"Percentage","5":"53.35","6":"Guest House/B&B - Room Occupancy","7":"All","8":"All","9":"Accessible Rural"},{"1":"S92000003","2":"2018","3":"Percent","4":"Percentage","5":"40.45","6":"Guest House/B&B - Room Occupancy","7":"All","8":"All","9":"Accessible Rural"},{"1":"S92000003","2":"2019","3":"Percent","4":"Percentage","5":"43.93","6":"Guest House/B&B - Room Occupancy","7":"All","8":"All","9":"Accessible Small Towns"}],"options":{"columns":{"min":{},"max":[10],"total":[9]},"rows":{"min":[10],"max":[10],"total":[6]},"pages":{}}}
-  </script>
-</div>
-<!-- rnb-frame-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
@@ -416,13 +267,6 @@ cols(
 <pre class="r"><code>day_visits_activities %&gt;% 
   head()</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbInRibF9kZiIsInRibCIsImRhdGEuZnJhbWUiXSwibnJvdyI6NiwibmNvbCI6Nywic3VtbWFyeSI6eyJBIHRpYmJsZSI6WyI2IHggNyJdfX0sInJkZiI6Ikg0c0lBQUFBQUFBQUE4MVVTMi9VTUJCMnQ4MnVka3RMSmJnaVdlSlNwRzZvcUpEZ3R1SjVReXRhb0xmSWliMVpxNDRkT2ZZK0VFZ2N1TUVmNE5TL3hzOUFITHFNTjNZaEVRY0Vxa1FrWjJhK2VYMHplYng4Y25vME9CMGdoRGJSWmhmdUVhZ29lblh5YlBnQW9hME9HQnRvQy9XZFhJRDdCaWc5T0h0d3V0N1JQMzU0NzlCZFIxY0RJTFRydW8zT1B6dHVhSFQrd2N1Rmx4KzlmTmZBV3l5ang4cEs4KzlHcytyTmdndkJsY1FsT0dtRjk1OC9HdC81cjN4aGUxKysxZHQ1UDY3bHA2KzFuT0ZhTHV1VmpkNk9mN2U5dytPcEtrc3VjenhSR25QRGlncWJLVEY0cVN5bUNrdGxzR2E1RlVTTEpVN3QwdWZ0dnlFbW16S0tCWjh4WEpWS0cxZUV6Wmcwd05DbEFlR1QxMkdHMnk5NFBnWE1HbXdVSmpnbCtnQ1hOc1ZFMHJ2UU9STTJ2YVJVc293VGdVdW1LeVZCOFZWWm5NZDR6aWlGVGdjNDE0UmFZbUF2ZjBucHorT2JLOXQrdWlpWnBOeFl6YTRhYW42cGtTUUZxenlkbmdldlRSaHhzVW1tYUtqUnA4UTBnTzJDa1FxQ0N2Ynp0YmVTbXlvWU15SnNDTjR6eW1wZUZRbkpESjl4RTU3NXJWUXpja2JWWENacWtsQUZYQXpQRWgvZDR0clhhaDRIdmp0d091N3JYcTFXMzl0RFpZSlVZYWdBRG1BQUVrODA1SU4xMFVycHFkSTlkMGpxdVA5VzFFcmUwQzNndXBXT0NSMW1VeXZQaHZkZGc3Vzd2bmE4M3YxRjc5VXRPeXRmS3ZLbHVrem1YSVpOUllLa1RIaGpGeVplRHh5WG1sK3VlUUJvRlJ0bFNJZ2JaRW9FWkQwYnV2Z0JSTW9xV0s0RkFBQT0ifQ== -->
-<div data-pagedtable="false">
-<script data-pagedtable-source type="application/json">
-{"columns":[{"label":["feature_code"],"name":[1],"type":["chr"],"align":["left"]},{"label":["date_code"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["measurement"],"name":[3],"type":["chr"],"align":["left"]},{"label":["units"],"name":[4],"type":["chr"],"align":["left"]},{"label":["value"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["tourism_activity"],"name":[6],"type":["chr"],"align":["left"]},{"label":["breakdown_of_domestic_tourism"],"name":[7],"type":["chr"],"align":["left"]}],"data":[{"1":"S92000003","2":"2019","3":"Count","4":"million pounds (GBP)","5":"1662","6":"Shopping for items that you do not regularly buy","7":"Expenditure"},{"1":"S92000003","2":"2016","3":"Count","4":"million pounds (GBP)","5":"469","6":"Watched live sporting events (not on TV)","7":"Expenditure"},{"1":"S92000003","2":"2014","3":"Count","4":"million pounds (GBP)","5":"892","6":"Night out to a bar, pub and/or club","7":"Expenditure"},{"1":"S92000003","2":"2017","3":"Count","4":"million pounds (GBP)","5":"354","6":"Special personal events e.g. wedding, graduation","7":"Expenditure"},{"1":"S92000003","2":"2015","3":"Count","4":"million pounds (GBP)","5":"400","6":"Watched live sporting events (not on TV)","7":"Expenditure"},{"1":"S92000003","2":"2014","3":"Count","4":"million pounds (GBP)","5":"421","6":"Watched live sporting events (not on TV)","7":"Expenditure"}],"options":{"columns":{"min":{},"max":[10],"total":[7]},"rows":{"min":[10],"max":[10],"total":[6]},"pages":{}}}
-  </script>
-</div>
-<!-- rnb-frame-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
@@ -431,13 +275,6 @@ cols(
 <pre class="r"><code>day_visits_demographics %&gt;% 
   head()</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbInRibF9kZiIsInRibCIsImRhdGEuZnJhbWUiXSwibnJvdyI6NiwibmNvbCI6MTMsInN1bW1hcnkiOnsiQSB0aWJibGUiOlsiNiB4IDEzIl19fSwicmRmIjoiSDRzSUFBQUFBQUFBQTkxVXpXNFRNUkIyazJ4S3R0M1Fpak5TWG1CWHFHbjR1UlVWOVlBSUIvN1UyOHIxT3FsVnJ4M1pYdHBLSFBvQXZBUHZ5YUZoTnZFMDhZb2dVQVVIVnRxZG1XLyt4OTU1OStwMEdKL0doSkEyYVhmaEd3RkxvbzhmVHRMbmhIUmFJR3lSRHVuVjlBclVqNEJKNE4yRHQrc1Z2ZmN2RHA3VXovRHZBSVQwNjJ4SDMxeGRHMW5SRzArL2V2b2xvSTBxbzJOZEtYZC9JWXphSHdzcGhWYURUOElLWi84eGlwTjV1bXozYU96cE0wL2ZlUHJhMHd3SEUvVFFEWExjVndwajd4eU8wdEhoNEpwVGc0YnRsMUtpOW1DVURqZHExdzNYdzRRWmZ1Nnc3dnRXdThHWUdpTjRzUmxhT0d5TTNCbFR5WDgzNGE5RC9USDduMGNLZGt5a2FNbnhoQk1QN2s0NGRaWGhPZE1GSGtLdm9DNEFka3BPTFJpVmZQWERWbXAxUGFQUFZGWm8vUGpNY0hwUjZFdVY2MGxlYU1qcEJNdWRyb3l3SlpaSHAyamZMNmtSanNyY09xams3c1pQdVNxNDhkSStMMmRTWDlmNVE3TUg3RnpJd25EbDVZUXl4cTJGYkRtajZMMXJOUk9RWUdvb3RCUU9wV2YwWllhRHFaZHY2d1krOC9uOGUzTjZURktMMDBNd2hrblJiR0xBSDZUYmhzdTJuamxZS09EVXFsZDcxSERlTWczZ1lhWHFTb3FVblZmcUlxMFhUN3hRTDUvRTg5MDFQbG1tYk0xOXFBakh4OVZVS0J4eEpPa1p4NXZSaDQ0WERXY3pJKzdPTXdiVVprN0RRU0RDdEVSazBSdTUvUUUyaVhsVDBRWUFBQT09In0= -->
-<div data-pagedtable="false">
-<script data-pagedtable-source type="application/json">
-{"columns":[{"label":["feature_code"],"name":[1],"type":["chr"],"align":["left"]},{"label":["date_code"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["measurement"],"name":[3],"type":["chr"],"align":["left"]},{"label":["units"],"name":[4],"type":["chr"],"align":["left"]},{"label":["value"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["breakdown_of_domestic_tourism"],"name":[6],"type":["chr"],"align":["left"]},{"label":["age"],"name":[7],"type":["chr"],"align":["left"]},{"label":["marital_status"],"name":[8],"type":["chr"],"align":["left"]},{"label":["gender"],"name":[9],"type":["chr"],"align":["left"]},{"label":["employment_status"],"name":[10],"type":["chr"],"align":["left"]},{"label":["children"],"name":[11],"type":["chr"],"align":["left"]},{"label":["access_to_car"],"name":[12],"type":["chr"],"align":["left"]},{"label":["social_grade"],"name":[13],"type":["chr"],"align":["left"]}],"data":[{"1":"S92000003","2":"2013","3":"Count","4":"Million Visits","5":"22","6":"Visits","7":"45-54 years","8":"All","9":"All","10":"All","11":"All","12":"All","13":"All"},{"1":"S92000003","2":"2013","3":"Count","4":"Million Visits","5":"58","6":"Visits","7":"All","8":"All","9":"Male","10":"All","11":"All","12":"All","13":"All"},{"1":"S92000003","2":"2016","3":"Count","4":"Million Visits","5":"23","6":"Visits","7":"25-34 years","8":"All","9":"All","10":"All","11":"All","12":"All","13":"All"},{"1":"S92000003","2":"2019","3":"Count","4":"Million Visits","5":"56","6":"Visits","7":"All","8":"Not Married","9":"All","10":"All","11":"All","12":"All","13":"All"},{"1":"S92000003","2":"2015","3":"Count","4":"Million Visits","5":"52","6":"Visits","7":"All","8":"Not Married","9":"All","10":"All","11":"All","12":"All","13":"All"},{"1":"S92000003","2":"2015","3":"Count","4":"Million Visits","5":"15","6":"Visits","7":"45-54 years","8":"All","9":"All","10":"All","11":"All","12":"All","13":"All"}],"options":{"columns":{"min":{},"max":[10],"total":[13]},"rows":{"min":[10],"max":[10],"total":[6]},"pages":{}}}
-  </script>
-</div>
-<!-- rnb-frame-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
@@ -446,13 +283,6 @@ cols(
 <pre class="r"><code>day_visits_location %&gt;% 
   head()</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbInRibF9kZiIsInRibCIsImRhdGEuZnJhbWUiXSwibnJvdyI6NiwibmNvbCI6Nywic3VtbWFyeSI6eyJBIHRpYmJsZSI6WyI2IHggNyJdfX0sInJkZiI6Ikg0c0lBQUFBQUFBQUE4MVVPMC9ETUJCMlM5T3FLUzhKQmhha2pEQzBRb0FFYk9XOUlnb1NXK1RHYm12VnNhUEVnYkl4TWpDejhpTVFPNytMZ1hKdWJHZ2lNYUZLUkhMdTdydUh2enM3dVR5NTJYRnZYSVRRSEpxcnd0c0JGVG5YVjJmTmZZUXFaVEJLcUlMcVdvN0F2UUpLRGRZeXJLcHgxRHNIMjF2NjJaa05nTkNpM3EzOU10TGNVUHZseWNnSEl4K05WRG03d05JNWxxbFFmemZ5VlZkRHhqbVR3b3ZBU1JKdjQvem9Zdk5mK2V6MCt1MXNPcy92bVh6ZHplUmJONU5ETDVOcmRuaTVQcGM2RkNlTVVLL3BkU2tPQmdaMk95SG0zRlB5VHRoek93UWJ4eEQ5Ry9CTHFTbFlxZ0dOQ3dRYXA2T0lDc0pVR3ROWlEvbDc3d2djMHNUUXFSbHd2a2V4anZVRFNXeU5Pc0VxQnpSQ2FBbUNRdnB6aVZMQmxKMkVjNHQ1YW9QWDFIMUVmZG56dVF5d2dtUDBiMW5DRkNYR3Y5NkZHUTRKVEZvSEVRbWNGQXQ4SmRPWUpXR0JjejJXZHkzTGV3RldXWDhyNC9ING85aGN3SEZpbTdPZ0M0M2dWaStHZkxBK0N5azFHV2w2a0ZUV2Z3T25rRnlLQzhCU0tqUVQwZ3dHcVJnMjkvUUdFM2YyTEJpOU9xWFhzaTNMWTFQS01hV3FWUFNac0JOek9PNVNib3hGNkhqU2NDdUsyZmU0WFVDVGxwSUsyemcza053aWs5N1E1eGZ1VUwyVEJBVUFBQT09In0= -->
-<div data-pagedtable="false">
-<script data-pagedtable-source type="application/json">
-{"columns":[{"label":["feature_code"],"name":[1],"type":["chr"],"align":["left"]},{"label":["date_code"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["measurement"],"name":[3],"type":["chr"],"align":["left"]},{"label":["units"],"name":[4],"type":["chr"],"align":["left"]},{"label":["value"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["type_of_location_visited"],"name":[6],"type":["chr"],"align":["left"]},{"label":["breakdown_of_domestic_tourism"],"name":[7],"type":["chr"],"align":["left"]}],"data":[{"1":"S92000003","2":"2014","3":"Count","4":"million pounds (GBP)","5":"186","6":"Seaside - beach","7":"Expenditure"},{"1":"S92000003","2":"2019","3":"Count","4":"million pounds (GBP)","5":"1456","6":"Small town","7":"Expenditure"},{"1":"S92000003","2":"2016","3":"Count","4":"million pounds (GBP)","5":"4916","6":"All areas","7":"Expenditure"},{"1":"S92000003","2":"2018","3":"Count","4":"million pounds (GBP)","5":"5474","6":"All areas","7":"Expenditure"},{"1":"S92000003","2":"2013","3":"Count","4":"million pounds (GBP)","5":"217","6":"Seaside - beach","7":"Expenditure"},{"1":"S92000003","2":"2018","3":"Count","4":"million pounds (GBP)","5":"6","6":"Seaside - other","7":"Expenditure"}],"options":{"columns":{"min":{},"max":[10],"total":[7]},"rows":{"min":[10],"max":[10],"total":[6]},"pages":{}}}
-  </script>
-</div>
-<!-- rnb-frame-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
@@ -461,13 +291,6 @@ cols(
 <pre class="r"><code>day_visits_transport %&gt;% 
   head()</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbInRibF9kZiIsInRibCIsImRhdGEuZnJhbWUiXSwibnJvdyI6NiwibmNvbCI6Nywic3VtbWFyeSI6eyJBIHRpYmJsZSI6WyI2IHggNyJdfX0sInJkZiI6Ikg0c0lBQUFBQUFBQUE4MVVPMC9ETUJBMnBXblZRSGtJRmdha1Npd3d0Q0M2d0VSRmVheUlaNWtxRTdzMHFtTkhqZ05GWW1CZzRDL0F3aCtDUDRRUTVaemFsRVJzQ0ltVGJOLzMzWjE5ZDdya2NLZFZkMXN1UW1nY2pSZGdkMEJGenNueFhuVURvWHdPd0JqS281SSsrMkNlQTZVSWF3Wld3UmhLUjV2cmExcnFmME1nTktWZmF6dy82TnpRNk95Yjh6N0QzeUlqMzdOMG1pTG02dmNnZmV0ODREUG1DMTRKd1VpaXl2TCs5c0hLdjdMWjdvbWJSNUNucmZjWExhK05WbFRYMHFBTENkL29MZzN4NlhtQ00zVVd6akRyVVdMUWJCTkxmSVg1YWhNSElaV2cvZWlXUnM0Qnc1eW1RZnFSaWQxK1NEbnhWU3pwWDFQcDJYWTREbWhrMGlrYWNySkRzZlp0ZTRMWU8wb0VxeFF4RVZBY2dWTkFSNE1TYzE5RkZseGhGbHZubVlDcXJpQnQwV2tyYUNCbGhsKzhrQlQzaUxqbTJrUUU1S0o4cjYxRUxQMG95T1Jha3VLNlp2TXR3OHJkd1RZWURONnlSWGtNUjdZb1M3cFFBSzUxSk1RRCtzaUVGRVdvWUlJZ0tLZS9kQ2NUUENZenhIVE1kU2FrNm5WajN0Ty9ET1FtNXFHVWpWNzRwaGVIVCtZRzVpckhEZ3ZsbC81b1BoaSsrR3JQRkZTY0ZGd0xwZi9WWmhmWXFLYUV3dGJQOVFTelRGSWIrdmdFZW0vQkhlQUVBQUE9In0= -->
-<div data-pagedtable="false">
-<script data-pagedtable-source type="application/json">
-{"columns":[{"label":["feature_code"],"name":[1],"type":["chr"],"align":["left"]},{"label":["date_code"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["measurement"],"name":[3],"type":["chr"],"align":["left"]},{"label":["units"],"name":[4],"type":["chr"],"align":["left"]},{"label":["value"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["method_of_travel"],"name":[6],"type":["chr"],"align":["left"]},{"label":["breakdown_of_domestic_tourism"],"name":[7],"type":["chr"],"align":["left"]}],"data":[{"1":"S92000003","2":"2018","3":"Count","4":"million pounds (GBP)","5":"251.8","6":"Walked","7":"Expenditure"},{"1":"S92000003","2":"2018","3":"Count","4":"million pounds (GBP)","5":"1.8","6":"Caravan/Campervan","7":"Expenditure"},{"1":"S92000003","2":"2014","3":"Count","4":"million pounds (GBP)","5":"97.8","6":"Walked","7":"Expenditure"},{"1":"S92000003","2":"2017","3":"Count","4":"million pounds (GBP)","5":"168.8","6":"Walked","7":"Expenditure"},{"1":"S92000003","2":"2018","3":"Count","4":"million pounds (GBP)","5":"193.1","6":"Plane","7":"Expenditure"},{"1":"S92000003","2":"2015","3":"Count","4":"million pounds (GBP)","5":"89.4","6":"Plane","7":"Expenditure"}],"options":{"columns":{"min":{},"max":[10],"total":[7]},"rows":{"min":[10],"max":[10],"total":[6]},"pages":{}}}
-  </script>
-</div>
-<!-- rnb-frame-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 </div>
@@ -478,52 +301,67 @@ cols(
 <h1>day_visits_activ cleaning</h1>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbInRibF9kZiIsInRibCIsImRhdGEuZnJhbWUiXSwibnJvdyI6MTEyLCJuY29sIjo0LCJzdW1tYXJ5Ijp7IkEgdGliYmxlIjpbIjExMiB4IDQiXX19LCJyZGYiOiJINHNJQUFBQUFBQUFBOTFheTNNVVJSZ2ZRb0tRS3FndDhjREJRNWNpUmt4MkEvaUFLcFZGRURoWWl2SThXQlY2WjN0M3g4ek9qRE05eVM2R1lnMVJnNlEwcUpSQThiTEtneWZMa3ZKeDVPQWZ3TkVqUjQ4Y1BSRjd0bjhka3ErY2twMlFCZDJxeVcvNjYrL3grNzd1M3U2ZHlidDdqbTNyUDladldkWkthK1VxOWJkUDNWcDlody90SGRwdVdiMDlxckhDNnJYV0pOaFEzZXZWVGErNjFxa3JLRjZiU2JTdDRyVVdzQUdjQWs0UXVTVHlhZEkvVGZ4TmtmNFpJcDhnOGthS2ZSby9TZXhOZTVvZzlXZjAwL0tqUEZxa2Z5S2xiZUxORUp4SzZhZjJOTjgwUG1ueHFaKzBPcVR4b1BXWkp2MXA5YWY1MDNHaC9CdkVqdFlwalE4ZHQvdXRINjFEMnJ4c0VLUjFNMGg1VXpsZEY1U1g3bGVmbkxvQ0xORGhnelUvQ0J5dnlpcCt5QndwNmhHVE5TNVowNDlaMldlZUwxa29xckhMUTdmSlNuRVRkZ05IdWJScm9zeGNaMHl3S1BCRG1UZ1JZOEtURVJ0SXpIeVBIVHJ5SFBTZmZzdXAxcFFzbGt6NmpMTVNEd2RaRUpjWTk4b0ZGZGwyNDlJOHBVRFlEbmRaSU1MSTk5UU52SXA4TmMvR1JibXNJZzJ5YXNqTE1aZU83MldrdE56Nlc5NFVUaFNIZ25GYk9tT09kQVJTcVBtbFV0TFkxTFpOZk5ndWp5SVJMZFV3NjJCbXJYajNNOHhzV0RpWWpCY0x1Qm8wMnduYVdReHFVOUVRb2UxRXdsaW9SSnYxcFpubDV3c2FsMXpIMXVYVVpoVVJLZWJjVlY0YU5hZmtMQ2puLzlWcS9kRkVLMW42eWJUa3JDNjQrKzlkblM2M0IrZ3FXNXFkUnVuMmF2MnZ4SHQrRDI4dTJDZ0VqMld6VUZPaktXdk1Wb0ZEVVlnQ3JnWkEydm1IbE5yUTI3RXMreXFVbS9KMU5NN2RVVzNxdTVXSFJESkRIWmV3ODNTeGtCMmNKVEw1WDI1U21hdTgzSWwzNEQvRDVIb2t4NklEMWNJUkozSmtzcmRJR1NZMDFMZDVtNEtzaWJwSXpnaWpnNndlUnlLdUQ3SVR2bThpN0JPZUNOV0tLT3VLRlpKQW9oRzRmcEtOeDNnbytOSWlaRFhMZHJicElKOE9WRFBNcDZ4cHYrRkpFVXJ1ZVBWa1Z4L1NFVzNIRTNYbDMvWTlXL1V5NVZhNTRTcHVkb0xkeXlsRHBIeGlJa01uaUFxaVljZGhwRUpGN1ozSlY3SHVyYmNnRGdNL0VwMlBhTFlBM2JSYW5wbmMzVjhheTArc215T1NrZUxLWGU1OS9LQllvTFhnOXBuMmlsT245a3JvQ0s4Y0pTdS93dXVPT29KVjdtMDdTL29sODgrQnMvM0l5TW84cTExM3YyU3ptbVVqbVhHT2RqVzFqZ2JyUWMzbHptYklvMWdQODdMaDRsLzY0ZWZKQXhyUDN0WTR4alEyTFkwbjBPOGQxeGkwTkg1d1MrTUY2QVd6d0FPTDdZei9remMxanNOUEEzNU9mNjh4Q2pRNjE5RVB2QUsvVjMvVCtORjJqWmNHRjdkZCtEc0ZQaGRXZzJjTzdUTDR3ZS9zUm8zdmdOYzNrSStpRG1lUTMzbkVQMXdFUXIrRVBEamFaLy9VZU80OStNZkQ2Sy91UUk1Nm4vcFI0MmZ3TndYK1grOEhIOGcvL2dQNUFUK3ZJUTdpTnNIekZIakg0UG5wc01ZR2VIMEIrWm5oeGZ3L0JJK1RzUGRiOEhNQWN1aVhtTVpKMUg4V1BDUG9CN2MwanNGUEMvS3pBOUJEZjVqVCtNa3hqZStEZi9QNFlqNGM4bDlITlY1L1JlTXY1elQrOEIxNEFDL2lJZiszUlkwM1h0RDQwN01hcS9EM2MwbmpaZFR4eG1XMGY5YzRBVDB6WHljeGY4YVJsd1JPNG1YQ2FmRCtjZ01ROHF2d2V4NTFtTUg0VHNML3BmbVhEWG9kYXJwV2NRQm8yaHVJL0NrZ0EyNGs4aTNBSjRpYzJqMUo3RmtLYmlCNnJ3TjNFbDZ2QWpjVHUwM0FyWVRYaTBSdkdHZ0I4OEFjOERYaUowZjBqUi9qZndmUk4vYTdXaHEzcGZEYkRueVorSCtKb0JtZk5EK21QUWcwOWQ5QjdGWUROeE03azUvSkIzNTIza0hiaklmeFI4Zlo5SnY1WVBJeS9oamhZZVlEOVdQMFM3YzFGbHNhajkvVU9JTCtQWkNiK3U0R2NxSm40dkNpeHYzUUc3bTV1RzNxWU9iWFpvSURLZjE3Z2Z1QXV3bS9QTlhYY3ZKV3ZzL2pkUkZaK2sxZ0w0UnJ5bHlLRWRzdm02MDJKLzA0ZEtMNkNCNjVtT2VSajZ2ZDFsVkhwWkhBajlVT1BGSXRtWmVKNjB6UFdMSkpSeVRxbXRBZno1dklhOVhWazVDYm01dWJwZlRhUjN6UU04SitSWS9uSzZHeVY2Mjd4T1F4UDBoT2ZjcW9KL2x2Z3o1aXZDSWtnbHpzSlV6S1EzWXQ5a2FIdGlienFML2RyejlyY1I4c3VPL1ZNWHZtNEtzUHZsWUpyNnFPTFlhOHkwdkNIS1RXcVpUYkdlZUQwUEdrU1VWSm83ejA1ZnlCcTkvMlhTTnBKMmZkL1J2eit1czRaU0VBQUE9PSJ9 -->
-<div data-pagedtable="false">
-<script data-pagedtable-source type="application/json">
-{"columns":[{"label":["date_code"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["tourism_activity"],"name":[2],"type":["chr"],"align":["left"]},{"label":["million_pounds_gbp"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["million_visits"],"name":[4],"type":["dbl"],"align":["right"]}],"data":[{"1":"2019","2":"Shopping for items that you do not regularly buy","3":"1662","4":"20"},{"1":"2016","2":"Watched live sporting events (not on TV)","3":"469","4":"12"},{"1":"2014","2":"Night out to a bar, pub and/or club","3":"892","4":"20"},{"1":"2017","2":"Special personal events e.g. wedding, graduation","3":"354","4":"6"},{"1":"2015","2":"Watched live sporting events (not on TV)","3":"400","4":"12"},{"1":"2014","2":"Watched live sporting events (not on TV)","3":"421","4":"9"},{"1":"2013","2":"Watched live sporting events (not on TV)","3":"243","4":"8"},{"1":"2015","2":"Leisure activities e.g. hobbies & evening classes","3":"264","4":"10"},{"1":"2018","2":"Leisure activities e.g. hobbies & evening classes","3":"285","4":"9"},{"1":"2014","2":"Shopping for items that you do not regularly buy","3":"1536","4":"17"},{"1":"2018","2":"Special personal events e.g. wedding, graduation","3":"265","4":"5"},{"1":"2016","2":"Leisure activities e.g. hobbies & evening classes","3":"261","4":"9"},{"1":"2017","2":"Leisure activities e.g. hobbies & evening classes","3":"421","4":"9"},{"1":"2014","2":"Leisure activities e.g. hobbies & evening classes","3":"469","4":"8"},{"1":"2019","2":"Sport participation, e.g. exercise classes, gym","3":"476","4":"7"},{"1":"2017","2":"Sport participation, e.g. exercise classes, gym","3":"374","4":"10"},{"1":"2015","2":"Special public event e.g. festival, exhibition","3":"392","4":"8"},{"1":"2019","2":"Special public event e.g. festival, exhibition","3":"629","4":"8"},{"1":"2014","2":"Special public event e.g. festival, exhibition","3":"311","4":"8"},{"1":"2016","2":"Special public event e.g. festival, exhibition","3":"205","4":"6"},{"1":"2017","2":"Special public event e.g. festival, exhibition","3":"394","4":"10"},{"1":"2016","2":"Went out for a meal","3":"1892","4":"36"},{"1":"2014","2":"Went out for a meal","3":"1966","4":"31"},{"1":"2017","2":"Watched live sporting events (not on TV)","3":"551","4":"12"},{"1":"2013","2":"Went out for a meal","3":"1675","4":"29"},{"1":"2019","2":"Watched live sporting events (not on TV)","3":"551","4":"13"},{"1":"2013","2":"Special public event e.g. festival, exhibition","3":"228","4":"6"},{"1":"2018","2":"Watched live sporting events (not on TV)","3":"496","4":"11"},{"1":"2018","2":"Shopping for items that you do not regularly buy","3":"1538","4":"18"},{"1":"2016","2":"Special personal events e.g. wedding, graduation","3":"273","4":"5"},{"1":"2017","2":"Shopping for items that you do not regularly buy","3":"1561","4":"21"},{"1":"2019","2":"Special personal events e.g. wedding, graduation","3":"266","4":"6"},{"1":"2015","2":"Shopping for items that you do not regularly buy","3":"1033","4":"16"},{"1":"2014","2":"Day out to a beauty/health centre/spa, etc.","3":"71","4":"2"},{"1":"2013","2":"Shopping for items that you do not regularly buy","3":"1512","4":"15"},{"1":"2014","2":"Special personal events e.g. wedding, graduation","3":"223","4":"4"},{"1":"2016","2":"Outdoor leisure activities e.g. walking, golf","3":"826","4":"30"},{"1":"2016","2":"Shopping for items that you do not regularly buy","3":"1380","4":"18"},{"1":"2013","2":"Special personal events e.g. wedding, graduation","3":"85","4":"4"},{"1":"2015","2":"Day out to a beauty/health centre/spa, etc.","3":"87","4":"2"},{"1":"2013","2":"Leisure activities e.g. hobbies & evening classes","3":"147","4":"6"},{"1":"2015","2":"Special personal events e.g. wedding, graduation","3":"142","4":"5"},{"1":"2018","2":"Outdoor leisure activities e.g. walking, golf","3":"893","4":"25"},{"1":"2019","2":"Night out to a bar, pub and/or club","3":"1111","4":"18"},{"1":"2019","2":"Outdoor leisure activities e.g. walking, golf","3":"1059","4":"30"},{"1":"2017","2":"Outdoor leisure activities e.g. walking, golf","3":"1276","4":"35"},{"1":"2018","2":"Night out to a bar, pub and/or club","3":"1150","4":"19"},{"1":"2019","2":"Leisure activities e.g. hobbies & evening classes","3":"507","4":"11"},{"1":"2013","2":"Night out to a bar, pub and/or club","3":"840","4":"18"},{"1":"2015","2":"Outdoor leisure activities e.g. walking, golf","3":"647","4":"24"},{"1":"2017","2":"Night out to a bar, pub and/or club","3":"1298","4":"23"},{"1":"2016","2":"Day out to a beauty/health centre/spa, etc.","3":"69","4":"2"},{"1":"2013","2":"Outdoor leisure activities e.g. walking, golf","3":"699","4":"22"},{"1":"2014","2":"Outdoor leisure activities e.g. walking, golf","3":"571","4":"22"},{"1":"2016","2":"Night out to a bar, pub and/or club","3":"973","4":"20"},{"1":"2015","2":"Night out to a bar, pub and/or club","3":"876","4":"19"},{"1":"2013","2":"Visitor attraction e.g. theme park, museum, zoo","3":"414","4":"11"},{"1":"2015","2":"General day out/ to explore an area","3":"506","4":"18"},{"1":"2015","2":"Visitor attraction e.g. theme park, museum, zoo","3":"345","4":"11"},{"1":"2017","2":"Visitor attraction e.g. theme park, museum, zoo","3":"742","4":"14"},{"1":"2018","2":"Sport participation, e.g. exercise classes, gym","3":"396","4":"9"},{"1":"2018","2":"General day out/ to explore an area","3":"1010","4":"25"},{"1":"2016","2":"General day out/ to explore an area","3":"806","4":"19"},{"1":"2018","2":"Day out to a beauty/health centre/spa, etc.","3":"87","4":"3"},{"1":"2019","2":"Visitor attraction e.g. theme park, museum, zoo","3":"443","4":"13"},{"1":"2013","2":"Entertainment - to a cinema, concert or theatre","3":"474","4":"11"},{"1":"2017","2":"Day out to a beauty/health centre/spa, etc.","3":"252","4":"4"},{"1":"2019","2":"Day out to a beauty/health centre/spa, etc.","3":"341","4":"5"},{"1":"2018","2":"Visitor attraction e.g. theme park, museum, zoo","3":"467","4":"14"},{"1":"2013","2":"Day out to a beauty/health centre/spa, etc.","3":"145","4":"1"},{"1":"2014","2":"Day trips/excursions for other leisure purpose","3":"599","4":"10"},{"1":"2017","2":"General day out/ to explore an area","3":"1042","4":"25"},{"1":"2013","2":"Day trips/excursions for other leisure purpose","3":"312","4":"9"},{"1":"2015","2":"Day trips/excursions for other leisure purpose","3":"269","4":"9"},{"1":"2018","2":"Day trips/excursions for other leisure purpose","3":"362","4":"10"},{"1":"2013","2":"General day out/ to explore an area","3":"528","4":"17"},{"1":"2019","2":"General day out/ to explore an area","3":"869","4":"24"},{"1":"2014","2":"Sport participation, e.g. exercise classes, gym","3":"317","4":"5"},{"1":"2016","2":"Sport participation, e.g. exercise classes, gym","3":"289","4":"8"},{"1":"2014","2":"General day out/ to explore an area","3":"715","4":"19"},{"1":"2015","2":"Sport participation, e.g. exercise classes, gym","3":"215","4":"7"},{"1":"2019","2":"Day trips/excursions for other leisure purpose","3":"406","4":"9"},{"1":"2017","2":"Day trips/excursions for other leisure purpose","3":"443","4":"9"},{"1":"2013","2":"Sport participation, e.g. exercise classes, gym","3":"143","4":"5"},{"1":"2017","2":"All","3":"5995","4":"151"},{"1":"2019","2":"Went out for a meal","3":"2078","4":"33"},{"1":"2019","2":"All","3":"5777","4":"134"},{"1":"2015","2":"All","3":"3922","4":"124"},{"1":"2013","2":"Visited friends or family for leisure","3":"1065","4":"41"},{"1":"2015","2":"Went out for a meal","3":"1631","4":"35"},{"1":"2017","2":"Went out for a meal","3":"2208","4":"39"},{"1":"2016","2":"All","3":"4916","4":"142"},{"1":"2013","2":"All","3":"4647","4":"124"},{"1":"2018","2":"Special public event e.g. festival, exhibition","3":"191","4":"7"},{"1":"2018","2":"All","3":"5474","4":"138"},{"1":"2017","2":"Visited friends or family for leisure","3":"1818","4":"49"},{"1":"2014","2":"All","3":"5020","4":"127"},{"1":"2019","2":"Visited friends or family for leisure","3":"1841","4":"49"},{"1":"2014","2":"Visitor attraction e.g. theme park, museum, zoo","3":"462","4":"11"},{"1":"2014","2":"Entertainment - to a cinema, concert or theatre","3":"469","4":"12"},{"1":"2018","2":"Entertainment - to a cinema, concert or theatre","3":"577","4":"13"},{"1":"2016","2":"Visitor attraction e.g. theme park, museum, zoo","3":"378","4":"13"},{"1":"2016","2":"Day trips/excursions for other leisure purpose","3":"330","4":"12"},{"1":"2015","2":"Entertainment - to a cinema, concert or theatre","3":"593","4":"12"},{"1":"2019","2":"Entertainment - to a cinema, concert or theatre","3":"620","4":"13"},{"1":"2016","2":"Visited friends or family for leisure","3":"1158","4":"44"},{"1":"2015","2":"Visited friends or family for leisure","3":"1186","4":"46"},{"1":"2018","2":"Went out for a meal","3":"1959","4":"38"},{"1":"2014","2":"Visited friends or family for leisure","3":"1376","4":"41"},{"1":"2017","2":"Entertainment - to a cinema, concert or theatre","3":"903","4":"15"},{"1":"2016","2":"Entertainment - to a cinema, concert or theatre","3":"604","4":"13"},{"1":"2018","2":"Visited friends or family for leisure","3":"1698","4":"45"}],"options":{"columns":{"min":{},"max":[10],"total":[4]},"rows":{"min":[10],"max":[10],"total":[112]},"pages":{}}}
-  </script>
-</div>
-<!-- rnb-frame-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZGF5X3Zpc2l0c19hY3Rpdml0aWVzIDwtIGRheV92aXNpdHNfYWN0aXZpdGllcyAlPiUgXG4gIHNlbGVjdCgtYyhtZWFzdXJlbWVudCwgZmVhdHVyZV9jb2RlLCBicmVha2Rvd25fb2ZfZG9tZXN0aWNfdG91cmlzbSkpICNyZW1vdmUgbWVhc3VyZW1lbnQgY29sdW1uLGZlYXR1cmUgY29kZSBhbmQgYnJlYWtkb3duXG5cbmRheV92aXNpdHNfYWN0aXZpdGllcyA8LSBkYXlfdmlzaXRzX2FjdGl2aXRpZXMgJT4lIFxuICAgZmlsdGVyKHRvdXJpc21fYWN0aXZpdHkgIT0gXCJBbGxcIilcblxuZGF5X3Zpc2l0c19hY3Rpdml0aWVzIDwtIGRheV92aXNpdHNfYWN0aXZpdGllcyAlPiUgI3NlcGVyYXRlIHZpc2l0cyBhbmQgZXhwZW5kYXR1cmUgaW50byBzZXBlcmF0ZSBjb2x1bW5zXG4gIHBpdm90X3dpZGVyKG5hbWVzX2Zyb20gPSB1bml0cyxcbiAgICAgICAgICAgICAgdmFsdWVzX2Zyb20gPSB2YWx1ZSlcblxuZGF5X3Zpc2l0c19hY3Rpdml0aWVzIDwtIGRheV92aXNpdHNfYWN0aXZpdGllcyAlPiUgY2xlYW5fbmFtZXMoKVxuYGBgIn0= -->
+<pre class="r"><code>day_visits_activities &lt;- day_visits_activities %&gt;% 
+  select(-c(measurement, feature_code, breakdown_of_domestic_tourism)) #remove measurement column,feature code and breakdown
+
+day_visits_activities &lt;- day_visits_activities %&gt;% 
+   filter(tourism_activity != &quot;All&quot;)
+
+day_visits_activities &lt;- day_visits_activities %&gt;% #seperate visits and expendature into seperate columns
+  pivot_wider(names_from = units,
+              values_from = value)
+
+day_visits_activities &lt;- day_visits_activities %&gt;% clean_names()</code></pre>
+<!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p>#day_visits_demo cleaning</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZGF5X3Zpc2l0c19kZW1vZ3JhcGhpY3MgPC0gZGF5X3Zpc2l0c19kZW1vZ3JhcGhpY3MgJT4lIFxuICBzZWxlY3QoLWMobWVhc3VyZW1lbnQsIGZlYXR1cmVfY29kZSwgYnJlYWtkb3duX29mX2RvbWVzdGljX3RvdXJpc20pKSAjcmVtb3ZlIG1lYXN1cmVtZW50IGNvbHVtbiwgZmVhdHVyZV9jb2RlIGFuZCBicmVha2Rvd25cblxuZGF5X3Zpc2l0c19kZW1vZ3JhcGhpY3MgPC0gZGF5X3Zpc2l0c19kZW1vZ3JhcGhpY3MgJT4lICNzZXBhcmF0ZSB2aXNpdHMgYW5kIGV4cGVuZGF0dXJlXG4gIHBpdm90X3dpZGVyKG5hbWVzX2Zyb20gPSB1bml0cyxcbiAgICAgICAgICAgICAgdmFsdWVzX2Zyb20gPSB2YWx1ZSlcbmBgYCJ9 -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZGF5X3Zpc2l0c19kZW1vZ3JhcGhpY3MgPC0gZGF5X3Zpc2l0c19kZW1vZ3JhcGhpY3MgJT4lIFxuICBzZWxlY3QoLWMobWVhc3VyZW1lbnQsIGZlYXR1cmVfY29kZSwgYnJlYWtkb3duX29mX2RvbWVzdGljX3RvdXJpc20pKSAjcmVtb3ZlIG1lYXN1cmVtZW50IGNvbHVtbiwgZmVhdHVyZV9jb2RlIGFuZCBicmVha2Rvd25cblxuZGF5X3Zpc2l0c19kZW1vZ3JhcGhpY3MgPC0gZGF5X3Zpc2l0c19kZW1vZ3JhcGhpY3MgJT4lICNzZXBhcmF0ZSB2aXNpdHMgYW5kIGV4cGVuZGF0dXJlXG4gIHBpdm90X3dpZGVyKG5hbWVzX2Zyb20gPSB1bml0cyxcbiAgICAgICAgICAgICAgdmFsdWVzX2Zyb20gPSB2YWx1ZSlcblxuI2RheV92aXNpdHNfZGVtb2dyYXBoaWNzIDwtIGRheV92aXNpdHNfZGVtb2dyYXBoaWNzICU+JSBcbiAgI2ZpbHRlcihhZ2UgIT0gXCJBbGxcIilcblxuZGF5X3Zpc2l0c19kZW1vZ3JhcGhpY3MgPC0gZGF5X3Zpc2l0c19kZW1vZ3JhcGhpY3MgJT4lIGNsZWFuX25hbWVzKClcbmBgYCJ9 -->
 <pre class="r"><code>day_visits_demographics &lt;- day_visits_demographics %&gt;% 
   select(-c(measurement, feature_code, breakdown_of_domestic_tourism)) #remove measurement column, feature_code and breakdown
 
 day_visits_demographics &lt;- day_visits_demographics %&gt;% #separate visits and expendature
   pivot_wider(names_from = units,
-              values_from = value)</code></pre>
+              values_from = value)
+
+#day_visits_demographics &lt;- day_visits_demographics %&gt;% 
+  #filter(age != &quot;All&quot;)
+
+day_visits_demographics &lt;- day_visits_demographics %&gt;% clean_names()</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p>#day_visits_local cleaning</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZGF5X3Zpc2l0c19sb2NhdGlvbiA8LSBkYXlfdmlzaXRzX2xvY2F0aW9uICU+JSBcbiAgc2VsZWN0KC1jKG1lYXN1cmVtZW50LCBmZWF0dXJlX2NvZGUsIGJyZWFrZG93bl9vZl9kb21lc3RpY190b3VyaXNtKSkgI3JlbW92ZSBtZWFzdXJlbWVudCBjb2x1bW4sIGZlYXR1cmUgY29kZSBhbmQgYnJlYWtkb3duXG5cbmRheV92aXNpdHNfbG9jYXRpb24gPC0gZGF5X3Zpc2l0c19sb2NhdGlvbiAlPiUgI3NlcGFyYXRlIHZpc2l0cyBhbmQgZXhwZW5kYXR1cmVcbiAgcGl2b3Rfd2lkZXIobmFtZXNfZnJvbSA9IHVuaXRzLFxuICAgICAgICAgICAgICB2YWx1ZXNfZnJvbSA9IHZhbHVlKVxuYGBgIn0= -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZGF5X3Zpc2l0c19sb2NhdGlvbiA8LSBkYXlfdmlzaXRzX2xvY2F0aW9uICU+JSBcbiAgc2VsZWN0KC1jKG1lYXN1cmVtZW50LCBmZWF0dXJlX2NvZGUsIGJyZWFrZG93bl9vZl9kb21lc3RpY190b3VyaXNtKSkgI3JlbW92ZSBtZWFzdXJlbWVudCBjb2x1bW4sIGZlYXR1cmUgY29kZSBhbmQgYnJlYWtkb3duXG5cbmRheV92aXNpdHNfbG9jYXRpb24gPC0gZGF5X3Zpc2l0c19sb2NhdGlvbiAlPiUgI3NlcGFyYXRlIHZpc2l0cyBhbmQgZXhwZW5kYXR1cmVcbiAgcGl2b3Rfd2lkZXIobmFtZXNfZnJvbSA9IHVuaXRzLFxuICAgICAgICAgICAgICB2YWx1ZXNfZnJvbSA9IHZhbHVlKVxuXG5kYXlfdmlzaXRzX2xvY2F0aW9uIDwtIGRheV92aXNpdHNfbG9jYXRpb24gJT4lIGNsZWFuX25hbWVzKClcbmBgYCJ9 -->
 <pre class="r"><code>day_visits_location &lt;- day_visits_location %&gt;% 
   select(-c(measurement, feature_code, breakdown_of_domestic_tourism)) #remove measurement column, feature code and breakdown
 
 day_visits_location &lt;- day_visits_location %&gt;% #separate visits and expendature
   pivot_wider(names_from = units,
-              values_from = value)</code></pre>
+              values_from = value)
+
+day_visits_location &lt;- day_visits_location %&gt;% clean_names()</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p>#regional_dom_tour cleaning</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucmVnaW9uYWxfZG9tZXN0aWNfdG91cmlzbSA8LSByZWdpb25hbF9kb21lc3RpY190b3VyaXNtICU+JSBcbiAgc2VsZWN0KC1jKG1lYXN1cmVtZW50LCBkYXRlX2NvZGUsIGZlYXR1cmVfY29kZSkpICNyZW1vdmUgbWVhc3VyZW1lbnQgY29sdW1uLCBkYXRlIGNvZGUgYW5kIGZlYXR1cmUgY29kZVxuXG4jcmVnaW9uYWxfZG9tZXN0aWNfdG91cmlzbSA8LSByZWdpb25hbF9kb21lc3RpY190b3VyaXNtICU+JSBraWxsbGxsIG1lZWVlZWVlZWVlXG4gICNwaXZvdF93aWRlcihuYW1lc19mcm9tID0gdW5pdHMsXG4gICAgICAgICAgICAgICN2YWx1ZXNfZnJvbSA9IHZhbHVlKVxuYGBgIn0= -->
-<pre class="r"><code>regional_domestic_tourism &lt;- regional_domestic_tourism %&gt;% 
-  select(-c(measurement, date_code, feature_code)) #remove measurement column, date code and feature code
-
-#regional_domestic_tourism &lt;- regional_domestic_tourism %&gt;% killlll meeeeeeeeee
-  #pivot_wider(names_from = units,
-              #values_from = value)</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucmVnaW9uYWxfZG9tZXN0aWNfdG91cmlzbTEgPC0gcmVnaW9uYWxfZG9tZXN0aWNfdG91cmlzbTEgJT4lIFxuICBzZWxlY3QoZGF0ZV9jb2RlLCByZWdpb25fb2ZfcmVzaWRlbmNlLCBtaWxsaW9uX3BvdW5kc19nYnBfRXhwZW5kaXR1cmUsIHRob3VzYW5kX25pZ2h0c19OaWdodHMsIHRob3VzYW5kX3Zpc2l0c19WaXNpdHMpXG5cbmBgYCJ9 -->
+<pre class="r"><code>regional_domestic_tourism1 &lt;- regional_domestic_tourism1 %&gt;% 
+  select(date_code, region_of_residence, million_pounds_gbp_Expenditure, thousand_nights_Nights, thousand_visits_Visits)
+</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiRXJyb3I6IENhbid0IHN1YnNldCBjb2x1bW5zIHRoYXQgZG9uJ3QgZXhpc3QuXG54IENvbHVtbiBgbWlsbGlvbl9wb3VuZHNfZ2JwX0V4cGVuZGl0dXJlYCBkb2Vzbid0IGV4aXN0LlxuUnVuIGBybGFuZzo6bGFzdF9lcnJvcigpYCB0byBzZWUgd2hlcmUgdGhlIGVycm9yIG9jY3VycmVkLlxuIn0= -->
+<pre><code>Error: Can&#39;t subset columns that don&#39;t exist.
+x Column `million_pounds_gbp_Expenditure` doesn&#39;t exist.
+Run `rlang::last_error()` to see where the error occurred.</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p>#scot_accom_occ cleaning</p>
@@ -538,13 +376,15 @@ day_visits_location &lt;- day_visits_location %&gt;% #separate visits and expend
 <p>#day_visits_tran cleaning</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZGF5X3Zpc2l0c190cmFuc3BvcnQgPC0gZGF5X3Zpc2l0c190cmFuc3BvcnQgJT4lIFxuICBzZWxlY3QoLWMobWVhc3VyZW1lbnQsIGZlYXR1cmVfY29kZSwgYnJlYWtkb3duX29mX2RvbWVzdGljX3RvdXJpc20pKSAjIHJlbW92ZSBtZWFzdXJlbWVudCwgZmVhdHVyZSBjb2RlIGFuZCBicmVha2Rvd25cblxuZGF5X3Zpc2l0c190cmFuc3BvcnQgPC0gZGF5X3Zpc2l0c190cmFuc3BvcnQgJT4lXG4gIHBpdm90X3dpZGVyKG5hbWVzX2Zyb20gPSB1bml0cyxcbiAgICAgICAgICAgICAgdmFsdWVzX2Zyb20gPSB2YWx1ZSlcbmBgYCJ9 -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZGF5X3Zpc2l0c190cmFuc3BvcnQgPC0gZGF5X3Zpc2l0c190cmFuc3BvcnQgJT4lIFxuICBzZWxlY3QoLWMobWVhc3VyZW1lbnQsIGZlYXR1cmVfY29kZSwgYnJlYWtkb3duX29mX2RvbWVzdGljX3RvdXJpc20pKSAjIHJlbW92ZSBtZWFzdXJlbWVudCwgZmVhdHVyZSBjb2RlIGFuZCBicmVha2Rvd25cblxuZGF5X3Zpc2l0c190cmFuc3BvcnQgPC0gZGF5X3Zpc2l0c190cmFuc3BvcnQgJT4lXG4gIHBpdm90X3dpZGVyKG5hbWVzX2Zyb20gPSB1bml0cyxcbiAgICAgICAgICAgICAgdmFsdWVzX2Zyb20gPSB2YWx1ZSlcblxuZGF5X3Zpc2l0c190cmFuc3BvcnQgPC0gZGF5X3Zpc2l0c190cmFuc3BvcnQgJT4lIGNsZWFuX25hbWVzKClcbmBgYCJ9 -->
 <pre class="r"><code>day_visits_transport &lt;- day_visits_transport %&gt;% 
   select(-c(measurement, feature_code, breakdown_of_domestic_tourism)) # remove measurement, feature code and breakdown
 
 day_visits_transport &lt;- day_visits_transport %&gt;%
   pivot_wider(names_from = units,
-              values_from = value)</code></pre>
+              values_from = value)
+
+day_visits_transport &lt;- day_visits_transport %&gt;% clean_names()</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
@@ -586,7 +426,7 @@ day_visits_transport &lt;- day_visits_transport %&gt;%
 <!-- rnb-text-end -->
 </div>
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAidmlzaXRfc2NvdGxhbmRfY2xlYW5pbmciCm91dHB1dDogaHRtbF9ub3RlYm9vawotLS0KIyBMaWJyYXJ5cwpgYGB7cn0KbGlicmFyeSh0aWR5dmVyc2UpCmxpYnJhcnkodGlkeXIpCmxpYnJhcnkoamFuaXRvcikKbGlicmFyeShkcGx5cikKbGlicmFyeShoZXJlKQpsaWJyYXJ5KGx1YnJpZGF0ZSkKYGBgCgojIFJlYWQgaW4gdGhlIGRhdGEgYW5kIHJ1biBjbGVhbiBuYW1lcwpgYGB7cn0KcmVnaW9uYWxfZG9tZXN0aWNfdG91cmlzbSA8LSByZWFkX2NzdigiZGF0YS9yZWdpb25hbF9kb21lc3RpY190b3VyaXNtLmNzdiIpICU+JSAgY2xlYW5fbmFtZXMoKQpzY290X2FjY29tb2RhdGlvbl9vY2N1cGFuY3kgPC0gcmVhZF9jc3YoImRhdGEvc2NvdHRpc2hfYWNjb21vZGF0aW9uX29jY3VwYW5jeS5jc3YiKSAlPiUgIGNsZWFuX25hbWVzKCkKZGF5X3Zpc2l0c19hY3Rpdml0aWVzIDwtIHJlYWRfY3N2KCJkYXRhL3RvdXJpc21fZGF5X3Zpc2l0c19hY3Rpdml0aWVzLmNzdiIpICU+JSAgY2xlYW5fbmFtZXMoKQpkYXlfdmlzaXRzX2RlbW9ncmFwaGljcyA8LSByZWFkX2NzdigiZGF0YS90b3VyaXNtX2RheV92aXNpdHNfZGVtb2dyYXBoaWNzLmNzdiIpICU+JSAgY2xlYW5fbmFtZXMoKQpkYXlfdmlzaXRzX2xvY2F0aW9uIDwtIHJlYWRfY3N2KCJkYXRhL3RvdXJpc21fZGF5X3Zpc2l0c19sb2NhdGlvbi5jc3YiKSAlPiUgIGNsZWFuX25hbWVzKCkKZGF5X3Zpc2l0c190cmFuc3BvcnQgPC0gcmVhZF9jc3YoImRhdGEvdG91cmlzbV9kYXlfdmlzaXRzX3RyYW5zcG9ydC5jc3YiKSAlPiUgIGNsZWFuX25hbWVzKCkKYGBgCkV4cGxvcmUgdGhlIGRhdGEKYGBge3J9CnJlZ2lvbmFsX2RvbWVzdGljX3RvdXJpc20gJT4lCiAgaGVhZCgpCmBgYAoKYGBge3J9CnNjb3RfYWNjb21vZGF0aW9uX29jY3VwYW5jeSAlPiUgCiAgaGVhZCgpCmBgYAoKYGBge3J9CmRheV92aXNpdHNfYWN0aXZpdGllcyAlPiUgCiAgaGVhZCgpCmBgYAoKYGBge3J9CmRheV92aXNpdHNfZGVtb2dyYXBoaWNzICU+JSAKICBoZWFkKCkKYGBgCgpgYGB7cn0KZGF5X3Zpc2l0c19sb2NhdGlvbiAlPiUgCiAgaGVhZCgpCmBgYAoKYGBge3J9CmRheV92aXNpdHNfdHJhbnNwb3J0ICU+JSAKICBoZWFkKCkKYGBgCgojIGNsZWFuIHRoZSBpbmRpdml1ZGFsIGRhdGEgc2V0cwojIGRheV92aXNpdHNfYWN0aXYgY2xlYW5pbmcKYGBge3J9CmRheV92aXNpdHNfYWN0aXZpdGllcyA8LSBkYXlfdmlzaXRzX2FjdGl2aXRpZXMgJT4lIAogIHNlbGVjdCgtYyhtZWFzdXJlbWVudCwgZmVhdHVyZV9jb2RlLCBicmVha2Rvd25fb2ZfZG9tZXN0aWNfdG91cmlzbSkpICNyZW1vdmUgbWVhc3VyZW1lbnQgY29sdW1uLGZlYXR1cmUgY29kZSBhbmQgYnJlYWtkb3duCgpkYXlfdmlzaXRzX2FjdGl2aXRpZXMgPC0gZGF5X3Zpc2l0c19hY3Rpdml0aWVzICU+JSAjc2VwZXJhdGUgdmlzaXRzIGFuZCBleHBlbmRhdHVyZSBpbnRvIHNlcGVyYXRlIGNvbHVtbnMKICBwaXZvdF93aWRlcihuYW1lc19mcm9tID0gdW5pdHMsCiAgICAgICAgICAgICAgdmFsdWVzX2Zyb20gPSB2YWx1ZSkKCmRheV92aXNpdHNfYWN0aXZpdGllcyA8LSBkYXlfdmlzaXRzX2FjdGl2aXRpZXMgJT4lIGNsZWFuX25hbWVzKCkKYGBgCgojZGF5X3Zpc2l0c19kZW1vIGNsZWFuaW5nCmBgYHtyfQpkYXlfdmlzaXRzX2RlbW9ncmFwaGljcyA8LSBkYXlfdmlzaXRzX2RlbW9ncmFwaGljcyAlPiUgCiAgc2VsZWN0KC1jKG1lYXN1cmVtZW50LCBmZWF0dXJlX2NvZGUsIGJyZWFrZG93bl9vZl9kb21lc3RpY190b3VyaXNtKSkgI3JlbW92ZSBtZWFzdXJlbWVudCBjb2x1bW4sIGZlYXR1cmVfY29kZSBhbmQgYnJlYWtkb3duCgpkYXlfdmlzaXRzX2RlbW9ncmFwaGljcyA8LSBkYXlfdmlzaXRzX2RlbW9ncmFwaGljcyAlPiUgI3NlcGFyYXRlIHZpc2l0cyBhbmQgZXhwZW5kYXR1cmUKICBwaXZvdF93aWRlcihuYW1lc19mcm9tID0gdW5pdHMsCiAgICAgICAgICAgICAgdmFsdWVzX2Zyb20gPSB2YWx1ZSkKYGBgCgojZGF5X3Zpc2l0c19sb2NhbCBjbGVhbmluZwpgYGB7cn0KZGF5X3Zpc2l0c19sb2NhdGlvbiA8LSBkYXlfdmlzaXRzX2xvY2F0aW9uICU+JSAKICBzZWxlY3QoLWMobWVhc3VyZW1lbnQsIGZlYXR1cmVfY29kZSwgYnJlYWtkb3duX29mX2RvbWVzdGljX3RvdXJpc20pKSAjcmVtb3ZlIG1lYXN1cmVtZW50IGNvbHVtbiwgZmVhdHVyZSBjb2RlIGFuZCBicmVha2Rvd24KCmRheV92aXNpdHNfbG9jYXRpb24gPC0gZGF5X3Zpc2l0c19sb2NhdGlvbiAlPiUgI3NlcGFyYXRlIHZpc2l0cyBhbmQgZXhwZW5kYXR1cmUKICBwaXZvdF93aWRlcihuYW1lc19mcm9tID0gdW5pdHMsCiAgICAgICAgICAgICAgdmFsdWVzX2Zyb20gPSB2YWx1ZSkKYGBgCgojcmVnaW9uYWxfZG9tX3RvdXIgY2xlYW5pbmcKYGBge3J9CnJlZ2lvbmFsX2RvbWVzdGljX3RvdXJpc20gPC0gcmVnaW9uYWxfZG9tZXN0aWNfdG91cmlzbSAlPiUgCiAgc2VsZWN0KC1jKG1lYXN1cmVtZW50LCBkYXRlX2NvZGUsIGZlYXR1cmVfY29kZSkpICNyZW1vdmUgbWVhc3VyZW1lbnQgY29sdW1uLCBkYXRlIGNvZGUgYW5kIGZlYXR1cmUgY29kZQoKI3JlZ2lvbmFsX2RvbWVzdGljX3RvdXJpc20gPC0gcmVnaW9uYWxfZG9tZXN0aWNfdG91cmlzbSAlPiUga2lsbGxsbCBtZWVlZWVlZWVlZQogICNwaXZvdF93aWRlcihuYW1lc19mcm9tID0gdW5pdHMsCiAgICAgICAgICAgICAgI3ZhbHVlc19mcm9tID0gdmFsdWUpCmBgYAoKI3Njb3RfYWNjb21fb2NjIGNsZWFuaW5nCmBgYHtyfQpzY290X2FjY29tb2RhdGlvbl9vY2N1cGFuY3kgPC0gc2NvdF9hY2NvbW9kYXRpb25fb2NjdXBhbmN5ICU+JSAKICBzZWxlY3QoLWMobWVhc3VyZW1lbnQsIHVuaXRzLCBmZWF0dXJlX2NvZGUpKSAjcmVtb3ZlIG1lYXN1cmVtZW50LCB1bml0IGNvbHVtbiBhbmQgZmVhdHVyZSBjb2RlCmBgYAoKI2RheV92aXNpdHNfdHJhbiBjbGVhbmluZwpgYGB7cn0KZGF5X3Zpc2l0c190cmFuc3BvcnQgPC0gZGF5X3Zpc2l0c190cmFuc3BvcnQgJT4lIAogIHNlbGVjdCgtYyhtZWFzdXJlbWVudCwgZmVhdHVyZV9jb2RlLCBicmVha2Rvd25fb2ZfZG9tZXN0aWNfdG91cmlzbSkpICMgcmVtb3ZlIG1lYXN1cmVtZW50LCBmZWF0dXJlIGNvZGUgYW5kIGJyZWFrZG93bgoKZGF5X3Zpc2l0c190cmFuc3BvcnQgPC0gZGF5X3Zpc2l0c190cmFuc3BvcnQgJT4lCiAgcGl2b3Rfd2lkZXIobmFtZXNfZnJvbSA9IHVuaXRzLAogICAgICAgICAgICAgIHZhbHVlc19mcm9tID0gdmFsdWUpCmBgYAoKCiMgbGVmdCBqb2luIHRoZSBhY3Rpdml0eXMgYW5kIGRlbW9ncmFwaGljcyB0b2dldGhlciBieSBmZWF0dXJlX2NvZGUKYGBge3J9CiNkYXlfdmlzaXRzX2FjdGl2aXR5X2RlbW9ncmFwaGljIDwtIGxlZnRfam9pbihkYXlfdmlzaXRzX2FjdGl2LCBkYXlfdmlzaXRzX2RlbW8sIGJ5ID0gImZlYXR1cmVfY29kZSIpCgojZGF5X3Zpc2l0c19hY3Rpdml0eV9kZW1vZ3JhcGhpYwpgYGAKIyBsZWZ0IGpvaW4gdGhlIHRhYmxlIHRvZ2V0aGVyIGJ5IGZlYXR1cmVfY29kZQoKYGBge3J9CiNkYXlfdmlzaXRzX2xvY2F0aW9uX3RyYW5zcG9ydCA8LSBsZWZ0X2pvaW4oZGF5X3Zpc2l0c19sb2NhLCBkYXlfdmlzaXRzX3RyYW5zLCBieSA9ICJmZWF0dXJlX2NvZGUiKQoKI2RheV92aXNpdHNfbG9jYXRpb25fdHJhbnNwb3J0CmBgYAojIHRyeSBub3QgdG8gZXhwbG9kZSBsYXB0b3Agd2l0aCBhIGpvaW4KYGBge3J9CiNsZWZ0X2pvaW4oZGF5X3Zpc2l0c19hY3Rpdml0eV9kZW1vZ3JhcGhpYywgZGF5X3Zpc2l0c19sb2NhdGlvbl90cmFuc3BvcnQsIGJ5ID0gImZlYXR1cmVfY29kZSIpCmBgYAoKd2hlbiB5b3Ugb3BlbiB0aGlzIGJhY2sgdXAsIGNsZWFuIHRoZSBkYXRhIHNldHMgb2YgdmFyaWFibGVzIGJlZm9yZSB0cnlpbmcgam9pbmluZyBhZ2Fpbg==</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAidmlzaXRfc2NvdGxhbmRfY2xlYW5pbmciCm91dHB1dDogaHRtbF9ub3RlYm9vawotLS0KIyBMaWJyYXJ5cwpgYGB7cn0KbGlicmFyeSh0aWR5dmVyc2UpCmxpYnJhcnkodGlkeXIpCmxpYnJhcnkoamFuaXRvcikKbGlicmFyeShkcGx5cikKbGlicmFyeShoZXJlKQpsaWJyYXJ5KGx1YnJpZGF0ZSkKYGBgCgojIFJlYWQgaW4gdGhlIGRhdGEgYW5kIHJ1biBjbGVhbiBuYW1lcwpgYGB7cn0KcmVnaW9uYWxfZG9tZXN0aWNfdG91cmlzbSA8LSByZWFkX2NzdigiZGF0YS9yZWdpb25hbF9kb21lc3RpY190b3VyaXNtLmNzdiIpICU+JSAgY2xlYW5fbmFtZXMoKQpzY290X2FjY29tb2RhdGlvbl9vY2N1cGFuY3kgPC0gcmVhZF9jc3YoImRhdGEvc2NvdHRpc2hfYWNjb21vZGF0aW9uX29jY3VwYW5jeS5jc3YiKSAlPiUgIGNsZWFuX25hbWVzKCkKZGF5X3Zpc2l0c19hY3Rpdml0aWVzIDwtIHJlYWRfY3N2KCJkYXRhL3RvdXJpc21fZGF5X3Zpc2l0c19hY3Rpdml0aWVzLmNzdiIpICU+JSAgY2xlYW5fbmFtZXMoKQpkYXlfdmlzaXRzX2RlbW9ncmFwaGljcyA8LSByZWFkX2NzdigiZGF0YS90b3VyaXNtX2RheV92aXNpdHNfZGVtb2dyYXBoaWNzLmNzdiIpICU+JSAgY2xlYW5fbmFtZXMoKQpkYXlfdmlzaXRzX2xvY2F0aW9uIDwtIHJlYWRfY3N2KCJkYXRhL3RvdXJpc21fZGF5X3Zpc2l0c19sb2NhdGlvbi5jc3YiKSAlPiUgIGNsZWFuX25hbWVzKCkKZGF5X3Zpc2l0c190cmFuc3BvcnQgPC0gcmVhZF9jc3YoImRhdGEvdG91cmlzbV9kYXlfdmlzaXRzX3RyYW5zcG9ydC5jc3YiKSAlPiUgIGNsZWFuX25hbWVzKCkKYGBgCkV4cGxvcmUgdGhlIGRhdGEKYGBge3J9CnJlZ2lvbmFsX2RvbWVzdGljX3RvdXJpc20gJT4lCiAgaGVhZCgpCmBgYAoKYGBge3J9CnNjb3RfYWNjb21vZGF0aW9uX29jY3VwYW5jeSAlPiUgCiAgaGVhZCgpCmBgYAoKYGBge3J9CmRheV92aXNpdHNfYWN0aXZpdGllcyAlPiUgCiAgaGVhZCgpCmBgYAoKYGBge3J9CmRheV92aXNpdHNfZGVtb2dyYXBoaWNzICU+JSAKICBoZWFkKCkKYGBgCgpgYGB7cn0KZGF5X3Zpc2l0c19sb2NhdGlvbiAlPiUgCiAgaGVhZCgpCmBgYAoKYGBge3J9CmRheV92aXNpdHNfdHJhbnNwb3J0ICU+JSAKICBoZWFkKCkKYGBgCgojIGNsZWFuIHRoZSBpbmRpdml1ZGFsIGRhdGEgc2V0cwojIGRheV92aXNpdHNfYWN0aXYgY2xlYW5pbmcKYGBge3J9CmRheV92aXNpdHNfYWN0aXZpdGllcyA8LSBkYXlfdmlzaXRzX2FjdGl2aXRpZXMgJT4lIAogIHNlbGVjdCgtYyhtZWFzdXJlbWVudCwgZmVhdHVyZV9jb2RlLCBicmVha2Rvd25fb2ZfZG9tZXN0aWNfdG91cmlzbSkpICNyZW1vdmUgbWVhc3VyZW1lbnQgY29sdW1uLGZlYXR1cmUgY29kZSBhbmQgYnJlYWtkb3duCgpkYXlfdmlzaXRzX2FjdGl2aXRpZXMgPC0gZGF5X3Zpc2l0c19hY3Rpdml0aWVzICU+JSAKICAgZmlsdGVyKHRvdXJpc21fYWN0aXZpdHkgIT0gIkFsbCIpCgpkYXlfdmlzaXRzX2FjdGl2aXRpZXMgPC0gZGF5X3Zpc2l0c19hY3Rpdml0aWVzICU+JSAjc2VwZXJhdGUgdmlzaXRzIGFuZCBleHBlbmRhdHVyZSBpbnRvIHNlcGVyYXRlIGNvbHVtbnMKICBwaXZvdF93aWRlcihuYW1lc19mcm9tID0gdW5pdHMsCiAgICAgICAgICAgICAgdmFsdWVzX2Zyb20gPSB2YWx1ZSkKCmRheV92aXNpdHNfYWN0aXZpdGllcyA8LSBkYXlfdmlzaXRzX2FjdGl2aXRpZXMgJT4lIGNsZWFuX25hbWVzKCkKYGBgCgojZGF5X3Zpc2l0c19kZW1vIGNsZWFuaW5nCmBgYHtyfQpkYXlfdmlzaXRzX2RlbW9ncmFwaGljcyA8LSBkYXlfdmlzaXRzX2RlbW9ncmFwaGljcyAlPiUgCiAgc2VsZWN0KC1jKG1lYXN1cmVtZW50LCBmZWF0dXJlX2NvZGUsIGJyZWFrZG93bl9vZl9kb21lc3RpY190b3VyaXNtKSkgI3JlbW92ZSBtZWFzdXJlbWVudCBjb2x1bW4sIGZlYXR1cmVfY29kZSBhbmQgYnJlYWtkb3duCgpkYXlfdmlzaXRzX2RlbW9ncmFwaGljcyA8LSBkYXlfdmlzaXRzX2RlbW9ncmFwaGljcyAlPiUgI3NlcGFyYXRlIHZpc2l0cyBhbmQgZXhwZW5kYXR1cmUKICBwaXZvdF93aWRlcihuYW1lc19mcm9tID0gdW5pdHMsCiAgICAgICAgICAgICAgdmFsdWVzX2Zyb20gPSB2YWx1ZSkKCiNkYXlfdmlzaXRzX2RlbW9ncmFwaGljcyA8LSBkYXlfdmlzaXRzX2RlbW9ncmFwaGljcyAlPiUgCiAgI2ZpbHRlcihhZ2UgIT0gIkFsbCIpCgpkYXlfdmlzaXRzX2RlbW9ncmFwaGljcyA8LSBkYXlfdmlzaXRzX2RlbW9ncmFwaGljcyAlPiUgY2xlYW5fbmFtZXMoKQpgYGAKCiNkYXlfdmlzaXRzX2xvY2FsIGNsZWFuaW5nCmBgYHtyfQpkYXlfdmlzaXRzX2xvY2F0aW9uIDwtIGRheV92aXNpdHNfbG9jYXRpb24gJT4lIAogIHNlbGVjdCgtYyhtZWFzdXJlbWVudCwgZmVhdHVyZV9jb2RlLCBicmVha2Rvd25fb2ZfZG9tZXN0aWNfdG91cmlzbSkpICNyZW1vdmUgbWVhc3VyZW1lbnQgY29sdW1uLCBmZWF0dXJlIGNvZGUgYW5kIGJyZWFrZG93bgoKZGF5X3Zpc2l0c19sb2NhdGlvbiA8LSBkYXlfdmlzaXRzX2xvY2F0aW9uICU+JSAjc2VwYXJhdGUgdmlzaXRzIGFuZCBleHBlbmRhdHVyZQogIHBpdm90X3dpZGVyKG5hbWVzX2Zyb20gPSB1bml0cywKICAgICAgICAgICAgICB2YWx1ZXNfZnJvbSA9IHZhbHVlKQoKZGF5X3Zpc2l0c19sb2NhdGlvbiA8LSBkYXlfdmlzaXRzX2xvY2F0aW9uICU+JSBjbGVhbl9uYW1lcygpCmBgYAoKI3JlZ2lvbmFsX2RvbV90b3VyIGNsZWFuaW5nCmBgYHtyfQpyZWdpb25hbF9kb21lc3RpY190b3VyaXNtIDwtIHJlZ2lvbmFsX2RvbWVzdGljX3RvdXJpc20gJT4lIAogICNzZWxlY3QoLWMobWVhc3VyZW1lbnQsIGZlYXR1cmVfY29kZSwgYnJlYWtkb3duX29mX2RvbWVzdGljX3RvdXJpc20pKSAlPiUgI3JlbW92ZSBtZWFzdXJlbWVudCBjb2x1bW4sIGRhdGUgY29kZSBhbmQgZmVhdHVyZSBjb2RlCiAgZmlsdGVyKHZhbHVlICE9ICIwIikKCnJlZ2lvbmFsX2RvbWVzdGljX3RvdXJpc20xIDwtIHJlZ2lvbmFsX2RvbWVzdGljX3RvdXJpc20gJT4lCiAgcGl2b3Rfd2lkZXIobmFtZXNfZnJvbSA9IHVuaXRzLAogICAgICAgICAgICAgIHZhbHVlc19mcm9tID0gdmFsdWUpICU+JQogIGNsZWFuX25hbWVzKCkKCnJlZ2lvbmFsX2RvbWVzdGljX3RvdXJpc20xIDwtIHJlZ2lvbmFsX2RvbWVzdGljX3RvdXJpc20xICU+JSAKICBwaXZvdF93aWRlcihuYW1lc19mcm9tID0gYnJlYWtkb3duX29mX2RvbWVzdGljX3RvdXJpc20sCiAgICAgICAgICAgICAgdmFsdWVzX2Zyb20gPSBjKG1pbGxpb25fcG91bmRzX2dicCwgdGhvdXNhbmRfbmlnaHRzLCB0aG91c2FuZF92aXNpdHMpKQoKcmVnaW9uYWxfZG9tZXN0aWNfdG91cmlzbTEgPC0gcmVnaW9uYWxfZG9tZXN0aWNfdG91cmlzbTEgJT4lIAogIHNlbGVjdChkYXRlX2NvZGUsIHJlZ2lvbl9vZl9yZXNpZGVuY2UsIG1pbGxpb25fcG91bmRzX2dicF9FeHBlbmRpdHVyZSwgdGhvdXNhbmRfbmlnaHRzX05pZ2h0cywgdGhvdXNhbmRfdmlzaXRzX1Zpc2l0cykKCnJlZ2lvbmFsX2RvbWVzdGljX3RvdXJpc20xIDwtIHJlZ2lvbmFsX2RvbWVzdGljX3RvdXJpc20xICU+JSAKICBmaWx0ZXIocmVnaW9uX29mX3Jlc2lkZW5jZSAhPSAiQWxsIG9mIEdCIikgJT4lIAogIGNsZWFuX25hbWVzKCkKYGBgCgojc2NvdF9hY2NvbV9vY2MgY2xlYW5pbmcKYGBge3J9CnNjb3RfYWNjb21vZGF0aW9uX29jY3VwYW5jeSA8LSBzY290X2FjY29tb2RhdGlvbl9vY2N1cGFuY3kgJT4lIAogIHNlbGVjdCgtYyhtZWFzdXJlbWVudCwgdW5pdHMsIGZlYXR1cmVfY29kZSkpICNyZW1vdmUgbWVhc3VyZW1lbnQsIHVuaXQgY29sdW1uIGFuZCBmZWF0dXJlIGNvZGUKYGBgCgojZGF5X3Zpc2l0c190cmFuIGNsZWFuaW5nCmBgYHtyfQpkYXlfdmlzaXRzX3RyYW5zcG9ydCA8LSBkYXlfdmlzaXRzX3RyYW5zcG9ydCAlPiUgCiAgc2VsZWN0KC1jKG1lYXN1cmVtZW50LCBmZWF0dXJlX2NvZGUsIGJyZWFrZG93bl9vZl9kb21lc3RpY190b3VyaXNtKSkgIyByZW1vdmUgbWVhc3VyZW1lbnQsIGZlYXR1cmUgY29kZSBhbmQgYnJlYWtkb3duCgpkYXlfdmlzaXRzX3RyYW5zcG9ydCA8LSBkYXlfdmlzaXRzX3RyYW5zcG9ydCAlPiUKICBwaXZvdF93aWRlcihuYW1lc19mcm9tID0gdW5pdHMsCiAgICAgICAgICAgICAgdmFsdWVzX2Zyb20gPSB2YWx1ZSkKCmRheV92aXNpdHNfdHJhbnNwb3J0IDwtIGRheV92aXNpdHNfdHJhbnNwb3J0ICU+JSBjbGVhbl9uYW1lcygpCmBgYAoKCiMgbGVmdCBqb2luIHRoZSBhY3Rpdml0eXMgYW5kIGRlbW9ncmFwaGljcyB0b2dldGhlciBieSBmZWF0dXJlX2NvZGUKYGBge3J9CiNkYXlfdmlzaXRzX2FjdGl2aXR5X2RlbW9ncmFwaGljIDwtIGxlZnRfam9pbihkYXlfdmlzaXRzX2FjdGl2LCBkYXlfdmlzaXRzX2RlbW8sIGJ5ID0gImZlYXR1cmVfY29kZSIpCgojZGF5X3Zpc2l0c19hY3Rpdml0eV9kZW1vZ3JhcGhpYwpgYGAKIyBsZWZ0IGpvaW4gdGhlIHRhYmxlIHRvZ2V0aGVyIGJ5IGZlYXR1cmVfY29kZQoKYGBge3J9CiNkYXlfdmlzaXRzX2xvY2F0aW9uX3RyYW5zcG9ydCA8LSBsZWZ0X2pvaW4oZGF5X3Zpc2l0c19sb2NhLCBkYXlfdmlzaXRzX3RyYW5zLCBieSA9ICJmZWF0dXJlX2NvZGUiKQoKI2RheV92aXNpdHNfbG9jYXRpb25fdHJhbnNwb3J0CmBgYAojIHRyeSBub3QgdG8gZXhwbG9kZSBsYXB0b3Agd2l0aCBhIGpvaW4KYGBge3J9CiNsZWZ0X2pvaW4oZGF5X3Zpc2l0c19hY3Rpdml0eV9kZW1vZ3JhcGhpYywgZGF5X3Zpc2l0c19sb2NhdGlvbl90cmFuc3BvcnQsIGJ5ID0gImZlYXR1cmVfY29kZSIpCmBgYAoKd2hlbiB5b3Ugb3BlbiB0aGlzIGJhY2sgdXAsIGNsZWFuIHRoZSBkYXRhIHNldHMgb2YgdmFyaWFibGVzIGJlZm9yZSB0cnlpbmcgam9pbmluZyBhZ2Fpbg==</div>
 
 
 

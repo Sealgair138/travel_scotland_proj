@@ -58,6 +58,9 @@ day_visits_transport %>%
 day_visits_activities <- day_visits_activities %>% 
   select(-c(measurement, feature_code, breakdown_of_domestic_tourism)) #remove measurement column,feature code and breakdown
 
+day_visits_activities <- day_visits_activities %>% 
+   filter(tourism_activity != "All")
+
 day_visits_activities <- day_visits_activities %>% #seperate visits and expendature into seperate columns
   pivot_wider(names_from = units,
               values_from = value)
@@ -73,6 +76,11 @@ day_visits_demographics <- day_visits_demographics %>%
 day_visits_demographics <- day_visits_demographics %>% #separate visits and expendature
   pivot_wider(names_from = units,
               values_from = value)
+
+#day_visits_demographics <- day_visits_demographics %>% 
+  #filter(age != "All")
+
+day_visits_demographics <- day_visits_demographics %>% clean_names()
 ```
 
 #day_visits_local cleaning
@@ -83,16 +91,31 @@ day_visits_location <- day_visits_location %>%
 day_visits_location <- day_visits_location %>% #separate visits and expendature
   pivot_wider(names_from = units,
               values_from = value)
+
+day_visits_location <- day_visits_location %>% clean_names()
 ```
 
 #regional_dom_tour cleaning
 ```{r}
 regional_domestic_tourism <- regional_domestic_tourism %>% 
-  select(-c(measurement, date_code, feature_code)) #remove measurement column, date code and feature code
+  #select(-c(measurement, feature_code, breakdown_of_domestic_tourism)) %>% #remove measurement column, date code and feature code
+  filter(value != "0")
 
-#regional_domestic_tourism <- regional_domestic_tourism %>% killlll meeeeeeeeee
-  #pivot_wider(names_from = units,
-              #values_from = value)
+regional_domestic_tourism1 <- regional_domestic_tourism %>%
+  pivot_wider(names_from = units,
+              values_from = value) %>%
+  clean_names()
+
+regional_domestic_tourism1 <- regional_domestic_tourism1 %>% 
+  pivot_wider(names_from = breakdown_of_domestic_tourism,
+              values_from = c(million_pounds_gbp, thousand_nights, thousand_visits))
+
+regional_domestic_tourism1 <- regional_domestic_tourism1 %>% 
+  select(date_code, region_of_residence, million_pounds_gbp_Expenditure, thousand_nights_Nights, thousand_visits_Visits)
+
+regional_domestic_tourism1 <- regional_domestic_tourism1 %>% 
+  filter(region_of_residence != "All of GB") %>% 
+  clean_names()
 ```
 
 #scot_accom_occ cleaning
@@ -109,6 +132,8 @@ day_visits_transport <- day_visits_transport %>%
 day_visits_transport <- day_visits_transport %>%
   pivot_wider(names_from = units,
               values_from = value)
+
+day_visits_transport <- day_visits_transport %>% clean_names()
 ```
 
 
