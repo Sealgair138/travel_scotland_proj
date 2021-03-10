@@ -33,20 +33,33 @@ Is there a particular key demographic of visitors we should be focusing on? Who 
 Who visits the most?
 
 ```{r} 
-# some kind of fact, maybe a bubble plot
-ggplot(day_visits_demographics) +
-  aes(x = age, y = million_pounds_gbp) +
+# some kind of facet, maybe a bubble plot
+day_visits_demographics %>% 
+  filter(age != "All") %>%
+ggplot() +
+  aes(x = million_visits, y = million_pounds_gbp, colour = age) +
   geom_point()
 ```
 
 What type of locations receive the most visits? What kinds of locations do people spend the most in?
 ```{r}
-
+day_visits_location %>% 
+  filter(type_of_location_visited != "All areas") %>% #filter out ALL
+ggplot() +
+  aes(x = million_visits, y = million_pounds_gbp, fill = type_of_location_visited) +
+  geom_col() +
+  theme(axis.text = element_text(angle = 45, vjust = 0.5, hjust = 1)) +
+  facet_wrap(~ date_code)
 ```
 
 Is there a particular method of travel our visitors arrive by? Some of our locations are remote and not easily accessible by public transport, so this would be good information to have.
 ```{r}
-
+day_visits_transport %>% 
+  filter(method_of_travel != "All") %>% 
+  ggplot() +
+  aes(x = reorder(method_of_travel, million_visits), y = million_visits) +
+  geom_col() +
+  coord_flip()
 ```
 
 When looking at regional tourism, what insights can we gain? Where are our visitors from? How do they differ in the money they spend, nights they spend in Scotland, or number of visits they do?
