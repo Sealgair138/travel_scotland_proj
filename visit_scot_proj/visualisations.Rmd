@@ -1,0 +1,10 @@
+---
+title: "Q&A"
+output: html_notebook
+---
+
+What kind of tourism activity generates the highest income for scotland
+```{r}
+day_visits_activities
+```
+

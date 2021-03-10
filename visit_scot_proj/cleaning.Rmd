@@ -5,70 +5,127 @@ output: html_notebook
 # Librarys
 ```{r}
 library(tidyverse)
+library(tidyr)
 library(janitor)
-
+library(dplyr)
+library(here)
+library(lubridate)
 ```
 
 # Read in the data and run clean names
 ```{r}
-regional_dom_tour <- read_csv("data/regional_domestic_tourism.csv") %>%  clean_names()
-scot_accom_occ <- read_csv("data/scottish_accomodation_occupancy.csv") %>%  clean_names()
-day_visits_activ <- read_csv("data/tourism_day_visits_activities.csv") %>%  clean_names()
-day_visits_demo <- read_csv("data/tourism_day_visits_demographics.csv") %>%  clean_names()
-day_visits_loca <- read_csv("data/tourism_day_visits_location.csv") %>%  clean_names()
-day_visits_trans <- read_csv("data/tourism_day_visits_transport.csv") %>%  clean_names()
+regional_domestic_tourism <- read_csv("data/regional_domestic_tourism.csv") %>%  clean_names()
+scot_accomodation_occupancy <- read_csv("data/scottish_accomodation_occupancy.csv") %>%  clean_names()
+day_visits_activities <- read_csv("data/tourism_day_visits_activities.csv") %>%  clean_names()
+day_visits_demographics <- read_csv("data/tourism_day_visits_demographics.csv") %>%  clean_names()
+day_visits_location <- read_csv("data/tourism_day_visits_location.csv") %>%  clean_names()
+day_visits_transport <- read_csv("data/tourism_day_visits_transport.csv") %>%  clean_names()
 ```
 Explore the data
 ```{r}
-regional_dom_tour %>%
+regional_domestic_tourism %>%
   head()
 ```
 
 ```{r}
-scot_accom_occ %>% 
+scot_accomodation_occupancy %>% 
   head()
 ```
 
 ```{r}
-day_visits_activ %>% 
+day_visits_activities %>% 
   head()
 ```
 
 ```{r}
-day_visits_demo %>% 
+day_visits_demographics %>% 
   head()
 ```
 
 ```{r}
-day_visits_loca %>% 
+day_visits_location %>% 
   head()
 ```
 
 ```{r}
-day_visits_trans %>% 
+day_visits_transport %>% 
   head()
 ```
+
 # clean the indiviudal data sets
-
+# day_visits_activ cleaning
 ```{r}
+day_visits_activities <- day_visits_activities %>% 
+  select(-c(measurement, feature_code, breakdown_of_domestic_tourism)) #remove measurement column,feature code and breakdown
 
+day_visits_activities <- day_visits_activities %>% #seperate visits and expendature into seperate columns
+  pivot_wider(names_from = units,
+              values_from = value)
+```
+
+#day_visits_demo cleaning
+```{r}
+day_visits_demographics <- day_visits_demographics %>% 
+  select(-c(measurement, feature_code, breakdown_of_domestic_tourism)) #remove measurement column, feature_code and breakdown
+
+day_visits_demographics <- day_visits_demographics %>% #separate visits and expendature
+  pivot_wider(names_from = units,
+              values_from = value)
+```
+
+#day_visits_local cleaning
+```{r}
+day_visits_location <- day_visits_location %>% 
+  select(-c(measurement, feature_code, breakdown_of_domestic_tourism)) #remove measurement column, feature code and breakdown
+
+day_visits_location <- day_visits_location %>% #separate visits and expendature
+  pivot_wider(names_from = units,
+              values_from = value)
+```
+
+#regional_dom_tour cleaning
+```{r}
+regional_domestic_tourism <- regional_domestic_tourism %>% 
+  select(-c(measurement, date_code, feature_code)) #remove measurement column, date code and feature code
+
+#regional_domestic_tourism <- regional_domestic_tourism %>% killlll meeeeeeeeee
+  #pivot_wider(names_from = units,
+              #values_from = value)
+```
+
+#scot_accom_occ cleaning
+```{r}
+scot_accomodation_occupancy <- scot_accomodation_occupancy %>% 
+  select(-c(measurement, units, feature_code)) #remove measurement, unit column and feature code
+```
+
+#day_visits_tran cleaning
+```{r}
+day_visits_transport <- day_visits_transport %>% 
+  select(-c(measurement, feature_code, breakdown_of_domestic_tourism)) # remove measurement, feature code and breakdown
+
+day_visits_transport <- day_visits_transport %>%
+  pivot_wider(names_from = units,
+              values_from = value)
+```
+
+
+# left join the activitys and demographics together by feature_code
+```{r}
+#day_visits_activity_demographic <- left_join(day_visits_activ, day_visits_demo, by = "feature_code")
+
+#day_visits_activity_demographic
 ```
 # left join the table together by feature_code
-```{r}
-day_visits_activity_demographic <- left_join(day_visits_activ, day_visits_demo, by = "feature_code")
-
-day_visits_activity_demographic
-```
-# left join the table together by feature_code
 
 ```{r}
-day_visits_location_transport <- left_join(day_visits_loca, day_visits_trans, by = "feature_code")
+#day_visits_location_transport <- left_join(day_visits_loca, day_visits_trans, by = "feature_code")
 
-day_visits_location_transport
+#day_visits_location_transport
 ```
 # try not to explode laptop with a join
 ```{r}
-# left_join(day_visits_activity_demographic, day_visits_location_transport, by = "feature_code")
+#left_join(day_visits_activity_demographic, day_visits_location_transport, by = "feature_code")
 ```
 
 when you open this back up, clean the data sets of variables before trying joining again
