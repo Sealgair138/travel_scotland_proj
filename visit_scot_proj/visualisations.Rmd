@@ -43,7 +43,6 @@ Is there a particular key demographic of visitors we should be focusing on? Who 
 Who visits the most?
 
 ```{r} 
-# some kind of facet, maybe a bubble plot
 day_visits_demographics %>% 
   filter(marital_status != "All") %>%
 ggplot() +
@@ -53,7 +52,21 @@ ggplot() +
     x = "Time Scale",
     y = "Visits in Millions",
     fill = "Marital Status",
-    title = "Visits of Married Couples verses Not Married"
+    title = "Visits of Married Couples and Unmarried"
+  )
+```
+
+```{r}
+day_visits_demographics %>% 
+  filter(children != "All") %>%
+ggplot() +
+  aes(x = date_code, y = million_visits, fill = children) +
+  geom_col(position = position_dodge())+
+  labs(
+    x = "Time Scale",
+    y = "Visits in Millions",
+    fill = " ",
+    title = "Visits with or without Children"
   )
 ```
 
@@ -101,7 +114,7 @@ day_visits_transport %>%
   coord_flip() +
   labs(
     x = "Method of Travel",
-    y = "Time Period",
+    y = "Visits in Millions",
     title = "Prefered Mode of Travel"
   )
 ```
